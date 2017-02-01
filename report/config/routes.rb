@@ -1,5 +1,5 @@
 Report::Application.routes.draw do
-  resources :uploads
+  resources :salles
 
-  root :to => "uploads#index"
+  root :to => "salles#index"
 end
