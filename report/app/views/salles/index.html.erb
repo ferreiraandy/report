@@ -1,4 +1,7 @@
-<%= form_tag 'controller/method_name', :multipart => true do %>
-   <label for="file">Upload text File</label> <%= file_field_tag "file" %>
-   <%= submit_tag %>
-<% end %> 
+
+<%= link_to 'Edit', new_salle_path(@salle) %> |
+
+
+<% @salles.each do |s| %>
+  <p><%= s.inspect %></p>
+<% end %>

@@ -1,3 +1,7 @@
+# encoding: UTF-8
+
+require 'fileutils'
+
 class SallesController < ApplicationController
   before_action :set_salle, only: [:show, :edit, :update, :destroy]
 
@@ -20,14 +24,35 @@ class SallesController < ApplicationController
   end
 
   # POST /salles
-  def create
-    @salle = Salle.new(salle_params)
 
-    if @salle.save
-      redirect_to @salle, notice: 'Salle was successfully created.'
-    else
-      render action: 'new'
+  def create
+    file = salle_params[:file].read.force_encoding("UTF-8")
+
+    line_num = 0
+    file.each_line do |doc|
+      line_num += 1
+
+      unless line_num == 1
+        item = doc.split("\t")
+
+        @salle = Salle.create({
+          purchaser: item[0],
+          description: item[1],
+          unit_price: item[2],
+          quantity: item[3],
+          address: item[4],
+          provider: item[5]
+        })
+
+        Rails.logger.warn("\n\n\n file: #{@salle.errors.inspect} \n\n\n")
+      end
     end
+
+    # if @salle.save
+    #   redirect_to @salle, notice: 'Salle was successfully created.'
+    # else
+    #   render action: 'new'
+    # end
   end
 
   # PATCH/PUT /salles/1
@@ -53,6 +78,7 @@ class SallesController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def salle_params
-      params.require(:salle).permit(:purchaser, :description, :unit_price, :quantity, :address, :provider)
+      # params.require(:salle).permit(:purchaser, :description, :unit_price, :quantity, :address, :provider)
+      params.require(:salle).permit(:file)
     end
 end
