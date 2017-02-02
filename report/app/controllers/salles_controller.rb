@@ -1,84 +1,61 @@
-# encoding: UTF-8
-
 require 'fileutils'
 
 class SallesController < ApplicationController
   before_action :set_salle, only: [:show, :edit, :update, :destroy]
 
-  # GET /salles
   def index
     @salles = Salle.all
   end
 
-  # GET /salles/1
   def show
   end
 
-  # GET /salles/new
   def new
     @salle = Salle.new
   end
 
-  # GET /salles/1/edit
-  def edit
-  end
-
-  # POST /salles
-
   def create
     file = salle_params[:file].read.force_encoding("UTF-8")
-
     line_num = 0
-    file.each_line do |doc|
-      line_num += 1
+    @salles = @errors = Array.new
 
-      unless line_num == 1
-        item = doc.split("\t")
+    ActiveRecord::Base.transaction do
+      file.each_line do |doc|
+        line_num += 1
 
-        @salle = Salle.create({
-          purchaser: item[0],
-          description: item[1],
-          unit_price: item[2],
-          quantity: item[3],
-          address: item[4],
-          provider: item[5]
-        })
+        unless line_num == 1
+          col = doc.split("\t")
 
-        Rails.logger.warn("\n\n\n file: #{@salle.errors.inspect} \n\n\n")
+          salle = Salle.create({
+            purchaser: col[0],
+            description: col[1],
+            unit_price: col[2],
+            quantity: col[3],
+            address: col[4],
+            provider: col[5]
+          })
+
+          @salles << salle
+          unless salle.errors.messages.blank?
+            @errors = salle.errors.messages
+            raise ActiveRecord::Rollback, @errors
+          end
+        end
       end
     end
 
-    # if @salle.save
-    #   redirect_to @salle, notice: 'Salle was successfully created.'
-    # else
-    #   render action: 'new'
-    # end
-  end
+    Rails.logger.warn("\n\n\n Errors #{@errors.inspect}\n\n\n")
+    Rails.logger.warn("\n\n\n Saves #{@salles.inspect}\n\n\n")
 
-  # PATCH/PUT /salles/1
-  def update
-    if @salle.update(salle_params)
-      redirect_to @salle, notice: 'Salle was successfully updated.'
-    else
-      render action: 'edit'
-    end
-  end
-
-  # DELETE /salles/1
-  def destroy
-    @salle.destroy
-    redirect_to salles_url, notice: 'Salle was successfully destroyed.'
+    render :template => "salles/list_report"
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
     def set_salle
       @salle = Salle.find(params[:id])
     end
 
-    # Only allow a trusted parameter "white list" through.
     def salle_params
-      # params.require(:salle).permit(:purchaser, :description, :unit_price, :quantity, :address, :provider)
       params.require(:salle).permit(:file)
     end
 end

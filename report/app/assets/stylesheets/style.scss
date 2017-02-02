@@ -1,0 +1,85 @@
+.navbar{
+  background: #FF8C22;
+}
+.navbar-brand a,
+.navbar-nav a{
+  color: #FFF;
+  font-weight: 700;
+}
+.navbar-nav a{
+  float: left;
+  margin: 16px 10px;
+}
+.navbar-text.navbar-right,
+.navbar-text.navbar-right a{
+  color: #FFF;
+}
+.navbar-text.navbar-right a{
+  font-weight: 700;
+}
+/******************************************************************************/
+/************************  Login **********************************************/
+/******************************************************************************/
+
+.login .bloco-input,
+.login .bloco-input input,
+.login .bloco-input .submit,
+.login .bloco-input a{
+  width: 100%;
+  margin: 10px auto 0px;
+}
+.login .bloco-input .submit,
+.login .bloco-input a{
+  background: red;
+  color: #FFF;
+  padding: 10px;
+  font-weight: 600;
+  text-align: center;
+}
+.login .column-2 a{
+  float: left;
+  margin: 10px auto 0px;
+}
+.login .bloco-input .submit{ background: #E77D23; }
+.login .bloco-input .google-login{ background: #C9402F; }
+.login .bloco-input .create-login{ background: #D0D0D0; color: #333; }
+
+/******************************************************************************/
+/************************  Lista **********************************************/
+/******************************************************************************/
+.title{
+  margin-bottom: 30px;
+}
+.select-item{
+  outline: 2px solid #DADADA;
+  padding: 14px 10px;
+  margin: 4px 0px;
+}
+.select-item.disabled{
+  outline: 2px solid #C9402F;
+  background: #F3EEEE;
+}
+.select-item .bloco-image{
+  text-align: center;
+}
+.select-item .cancel-item{
+  margin-top: 30px;
+}
+.select-item a {
+  color: #333;
+}
+.select-item .cancel-item a {
+  display: block;
+  text-align: center;
+  background: #C9402F;
+  color: #FFF;
+  padding: 4px 10px;
+  font-weight: 400;
+}
+.alert.alert-alert{
+  border: 2px solid #C9402F;
+  padding: 10px;
+  text-align: center;
+  font-weight: 600;
+  color: #333;
+}
