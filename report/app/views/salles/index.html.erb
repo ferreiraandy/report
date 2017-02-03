@@ -1,7 +1,11 @@
+<div class="block-center text-center">
 
-<%= link_to 'Edit', new_salle_path(@salle) %> |
+  <%= form_for @salle, html: { multipart: true } do |f| %>
+    <h2>Escolha o arquivo a ser processado.</h2>
+    <%= f.file_field :file %>
 
-
-<% @salles.each do |s| %>
-  <p><%= s.inspect %></p>
-<% end %>
+    <div id="file-submit" class="actions">
+      <%= f.submit %>
+    </div>
+  <% end %>
+</div>

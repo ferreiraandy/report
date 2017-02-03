@@ -1,5 +1,64 @@
+<%#= @errors.inspect %>
 
+<% if @erros %>
+  <div id="error_explanation">
+    <ul>
+      <% @errors.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
 
+<div class="col-md-12">
+  <div class="col-md-2 col-sm-2 col-xs-2 "><h4>Comprador</h4></div>
+  <div class="col-md-2 col-sm-2 hidden-xs "><h4>Descrição</h4></div>
+  <div class="col-md-2 col-sm-2 col-xs-2 "><h4>Quantidade</h4></div>
+  <div class="col-md-2 col-sm-2 col-xs-2 "><h4>Endereço</h4></div>
+  <div class="col-md-2 col-sm-2 col-xs-2 "><h4>Fornecedor</h4></div>
+  <div class="col-md-1 col-sm-1 col-xs-1 "><h4>Unidade</h4></div>
+  <div class="col-md-1 col-sm-1 col-xs-1 "><h4>Total</h4></div>
+</div>
 
-<%= @errors.inspect %>
-<%= @salles.inspect %>
+<% @salles.each do |salle| %>
+  <div class="col-md-12">
+    <div class="col-md-2 col-sm-2 col-xs-2 ">
+      <%= salle.purchaser %>
+    </div>
+
+    <div class="col-md-2 col-sm-2 hidden-xs ">
+      <%= salle.description %>
+    </div>
+
+    <div class="col-md-2 col-sm-2 col-xs-2  text-center">
+      <%= salle.quantity %>
+    </div>
+
+    <div class="col-md-2 col-sm-2 col-xs-2 ">
+      <%= salle.address %>
+    </div>
+
+    <div class="col-md-2 col-sm-2 col-xs-2 ">
+      <%= salle.provider %>
+    </div>
+
+    <div class="col-md-2 col-sm-2 col-xs-2  text-center">
+      <%= salle.unit_price %>
+    </div>
+
+    <div class="col-md-2 col-sm-2 col-xs-2  text-center">
+      <%= salle.total_price %>
+    </div>
+  </div>
+<% end %>
+
+<div class="col-md-12 text-right">
+  <div class="col-md-6">
+    <h4>Valor Total</h4>
+  </div>
+  <div class="col-md-6">
+    <h4>
+      <%= @salles.inject(0) {|sum, value| sum + value[:total_price]} %>
+    </h4>
+  </div>
+</div>

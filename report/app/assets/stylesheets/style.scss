@@ -1,85 +1,98 @@
+// body {
+//   background-color: #fff;
+//   color: #333;
+//   font-family: verdana, arial, helvetica, sans-serif;
+//   font-size: 13px;
+//   line-height: 18px;
+// }
+
+// p, ol, ul, td {
+//   font-family: verdana, arial, helvetica, sans-serif;
+//   font-size: 13px;
+//   line-height: 18px;
+// }
+
+// pre {
+//   background-color: #eee;
+//   padding: 10px;
+//   font-size: 11px;
+// }
+
+// a {
+//   color: #000;
+//   &:visited {
+//     color: #666;
+//   }
+//   &:hover {
+//     color: #fff;
+//     background-color: #000;
+//   }
+// }
+
+// div {
+//   &.field, &.actions {
+//     margin-bottom: 10px;
+//   }
+// }
+
+// #notice {
+//   color: green;
+// }
+
+// .field_with_errors {
+//   padding: 2px;
+//   background-color: red;
+//   display: table;
+// }
+
+// #error_explanation {
+//   width: 450px;
+//   border: 2px solid red;
+//   padding: 7px;
+//   padding-bottom: 0;
+//   margin-bottom: 20px;
+//   background-color: #f0f0f0;
+//   h2 {
+//     text-align: left;
+//     font-weight: bold;
+//     padding: 5px 5px 5px 15px;
+//     font-size: 12px;
+//     margin: -7px;
+//     margin-bottom: 0px;
+//     background-color: #c00;
+//     color: #fff;
+//   }
+//   ul li {
+//     font-size: 12px;
+//     list-style: square;
+//   }
+// }
+
 .navbar{
-  background: #FF8C22;
+  background: #333;
 }
-.navbar-brand a,
 .navbar-nav a{
   color: #FFF;
   font-weight: 700;
-}
-.navbar-nav a{
   float: left;
-  margin: 16px 10px;
+  padding: 16px 10px;
 }
-.navbar-text.navbar-right,
-.navbar-text.navbar-right a{
-  color: #FFF;
-}
-.navbar-text.navbar-right a{
-  font-weight: 700;
-}
-/******************************************************************************/
-/************************  Login **********************************************/
-/******************************************************************************/
-
-.login .bloco-input,
-.login .bloco-input input,
-.login .bloco-input .submit,
-.login .bloco-input a{
+/************************************************************/
+/*********************       Home   *************************/
+/************************************************************/
+#salle_file{
   width: 100%;
-  margin: 10px auto 0px;
+  margin: 100px 0px 40px;
+  text-align: center;
 }
-.login .bloco-input .submit,
-.login .bloco-input a{
-  background: red;
+#file-submit input{
+  background: #00A63F;
   color: #FFF;
-  padding: 10px;
-  font-weight: 600;
-  text-align: center;
+  font-weight: 700;
+  padding: 10px 30px;
+  border: none;
 }
-.login .column-2 a{
-  float: left;
-  margin: 10px auto 0px;
-}
-.login .bloco-input .submit{ background: #E77D23; }
-.login .bloco-input .google-login{ background: #C9402F; }
-.login .bloco-input .create-login{ background: #D0D0D0; color: #333; }
-
-/******************************************************************************/
-/************************  Lista **********************************************/
-/******************************************************************************/
-.title{
-  margin-bottom: 30px;
-}
-.select-item{
-  outline: 2px solid #DADADA;
-  padding: 14px 10px;
-  margin: 4px 0px;
-}
-.select-item.disabled{
-  outline: 2px solid #C9402F;
-  background: #F3EEEE;
-}
-.select-item .bloco-image{
-  text-align: center;
-}
-.select-item .cancel-item{
-  margin-top: 30px;
-}
-.select-item a {
-  color: #333;
-}
-.select-item .cancel-item a {
-  display: block;
-  text-align: center;
-  background: #C9402F;
-  color: #FFF;
-  padding: 4px 10px;
-  font-weight: 400;
-}
-.alert.alert-alert{
-  border: 2px solid #C9402F;
-  padding: 10px;
-  text-align: center;
-  font-weight: 600;
-  color: #333;
+#file-submit input:hover,
+#file-submit input:active{
+  background: #098D3B;
 }

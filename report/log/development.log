@@ -3230,3 +3230,2603 @@ Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 13:49:03 -020
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 13:49:03 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 21:08:38 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SallesController#index as HTML
+  [1m[35mSalle Load (0.2ms)[0m  SELECT "salles".* FROM "salles"
+  Rendered salles/index.html.erb within layouts/application (24.0ms)
+Completed 200 OK in 468ms (Views: 449.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 21:08:39 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 21:08:39 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 21:08:39 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-02-02 21:08:39 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 21:08:39 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 21:08:39 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 21:08:39 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 21:08:39 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 21:08:39 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 21:08:39 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 21:08:44 -0200
+Processing by SallesController#index as HTML
+  [1m[36mSalle Load (0.2ms)[0m  [1mSELECT "salles".* FROM "salles"[0m
+  Rendered salles/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 21:08:47 -0200
+Processing by SallesController#index as HTML
+  [1m[35mSalle Load (0.1ms)[0m  SELECT "salles".* FROM "salles"
+  Rendered salles/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 21:08:48 -0200
+Processing by SallesController#index as HTML
+  [1m[36mSalle Load (0.2ms)[0m  [1mSELECT "salles".* FROM "salles"[0m
+  Rendered salles/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/salles/new" for 127.0.0.1 at 2017-02-02 21:09:06 -0200
+Processing by SallesController#new as HTML
+  Rendered salles/_form.html.erb (97.5ms)
+  Rendered salles/new.html.erb within layouts/application (153.1ms)
+Completed 200 OK in 248ms (Views: 247.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/salles" for 127.0.0.1 at 2017-02-02 21:09:11 -0200
+Processing by SallesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"91g7KqzcBGRABjES/Cvp1m8iH1Abfl5J/+GgBquD1C0=", "salle"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x007f9f4053be70 @tempfile=#<Tempfile:/tmp/RackMultipart20170202-4767-18yjghm>, @original_filename="dados.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"salle[file]\"; filename=\"dados.txt\"\r\nContent-Type: text/plain\r\n">}, "commit"=>"Create Salle"}
+  [1m[35m (0.4ms)[0m  begin transaction
+  [1m[36mSQL (84.4ms)[0m  [1mINSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "987 Fake St"], ["created_at", Thu, 02 Feb 2017 23:09:11 UTC +00:00], ["description", "R$10 off R$20 of food"], ["provider", "Bob's Pizza\n"], ["purchaser", "João Silva"], ["quantity", 2], ["unit_price", 10.0], ["updated_at", Thu, 02 Feb 2017 23:09:11 UTC +00:00]]
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["address", "456 Unreal Rd"], ["created_at", Thu, 02 Feb 2017 23:09:12 UTC +00:00], ["description", "R$30 of awesome for R$10"], ["provider", "Tom's Awesome Shop\n"], ["purchaser", "Amy Pond"], ["quantity", 5], ["unit_price", 10.0], ["updated_at", Thu, 02 Feb 2017 23:09:12 UTC +00:00]]
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "123 Fake St"], ["created_at", Thu, 02 Feb 2017 23:09:12 UTC +00:00], ["description", "R$20 Sneakers for R$5"], ["provider", "Sneaker Store Emporium\n"], ["purchaser", "Marty McFly"], ["quantity", 1], ["unit_price", 5.0], ["updated_at", Thu, 02 Feb 2017 23:09:12 UTC +00:00]]
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["address", "123 Fake St"], ["created_at", Thu, 02 Feb 2017 23:09:12 UTC +00:00], ["description", "R$20 Sneakers for R$5"], ["provider", "Sneaker Store Emporium\n"], ["purchaser", "Snake Plissken"], ["quantity", 4], ["unit_price", 5.0], ["updated_at", Thu, 02 Feb 2017 23:09:12 UTC +00:00]]
+  [1m[36m (137.4ms)[0m  [1mcommit transaction[0m
+
+
+
+ Errors [#<Salle id: 42, purchaser: "João Silva", description: "R$10 off R$20 of food", unit_price: 10.0, quantity: 2, address: "987 Fake St", provider: "Bob's Pizza\n", created_at: "2017-02-02 23:09:11", updated_at: "2017-02-02 23:09:11">, #<Salle id: 43, purchaser: "Amy Pond", description: "R$30 of awesome for R$10", unit_price: 10.0, quantity: 5, address: "456 Unreal Rd", provider: "Tom's Awesome Shop\n", created_at: "2017-02-02 23:09:12", updated_at: "2017-02-02 23:09:12">, #<Salle id: 44, purchaser: "Marty McFly", description: "R$20 Sneakers for R$5", unit_price: 5.0, quantity: 1, address: "123 Fake St", provider: "Sneaker Store Emporium\n", created_at: "2017-02-02 23:09:12", updated_at: "2017-02-02 23:09:12">, #<Salle id: 45, purchaser: "Snake Plissken", description: "R$20 Sneakers for R$5", unit_price: 5.0, quantity: 4, address: "123 Fake St", provider: "Sneaker Store Emporium\n", created_at: "2017-02-02 23:09:12", updated_at: "2017-02-02 23:09:12">]
+
+
+
+
+
+
+ Saves [#<Salle id: 42, purchaser: "João Silva", description: "R$10 off R$20 of food", unit_price: 10.0, quantity: 2, address: "987 Fake St", provider: "Bob's Pizza\n", created_at: "2017-02-02 23:09:11", updated_at: "2017-02-02 23:09:11">, #<Salle id: 43, purchaser: "Amy Pond", description: "R$30 of awesome for R$10", unit_price: 10.0, quantity: 5, address: "456 Unreal Rd", provider: "Tom's Awesome Shop\n", created_at: "2017-02-02 23:09:12", updated_at: "2017-02-02 23:09:12">, #<Salle id: 44, purchaser: "Marty McFly", description: "R$20 Sneakers for R$5", unit_price: 5.0, quantity: 1, address: "123 Fake St", provider: "Sneaker Store Emporium\n", created_at: "2017-02-02 23:09:12", updated_at: "2017-02-02 23:09:12">, #<Salle id: 45, purchaser: "Snake Plissken", description: "R$20 Sneakers for R$5", unit_price: 5.0, quantity: 4, address: "123 Fake St", provider: "Sneaker Store Emporium\n", created_at: "2017-02-02 23:09:12", updated_at: "2017-02-02 23:09:12">]
+
+
+
+  Rendered salles/list_report.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 283ms (Views: 37.0ms | ActiveRecord: 223.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 21:09:12 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 21:09:12 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-02-02 21:09:12 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 21:09:12 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 21:09:12 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 21:09:12 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 21:09:12 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 21:09:12 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 21:09:12 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 21:09:12 -0200
+
+
+Started GET "/salles" for 127.0.0.1 at 2017-02-02 21:14:39 -0200
+Processing by SallesController#index as HTML
+  [1m[35mSalle Load (0.2ms)[0m  SELECT "salles".* FROM "salles"
+  Rendered salles/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 21:14:39 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-02-02 21:14:39 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 21:14:39 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 21:14:39 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 21:14:39 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 21:14:39 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 21:14:39 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 21:14:39 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 21:14:39 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 21:14:39 -0200
+
+
+Started GET "/salles/new" for 127.0.0.1 at 2017-02-02 21:14:46 -0200
+Processing by SallesController#new as HTML
+  Rendered salles/_form.html.erb (1.5ms)
+  Rendered salles/new.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/salles" for 127.0.0.1 at 2017-02-02 21:14:49 -0200
+Processing by SallesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"91g7KqzcBGRABjES/Cvp1m8iH1Abfl5J/+GgBquD1C0=", "salle"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x007f9f404466f0 @tempfile=#<Tempfile:/tmp/RackMultipart20170202-4767-1ra044t>, @original_filename="dados.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"salle[file]\"; filename=\"dados.txt\"\r\nContent-Type: text/plain\r\n">}, "commit"=>"Create Salle"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["address", "987 Fake St"], ["created_at", Thu, 02 Feb 2017 23:14:49 UTC +00:00], ["description", "R$10 off R$20 of food"], ["provider", "Bob's Pizza\n"], ["purchaser", "João Silva"], ["quantity", 2], ["unit_price", 10.0], ["updated_at", Thu, 02 Feb 2017 23:14:49 UTC +00:00]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "456 Unreal Rd"], ["created_at", Thu, 02 Feb 2017 23:14:49 UTC +00:00], ["description", "R$30 of awesome for R$10"], ["provider", "Tom's Awesome Shop\n"], ["purchaser", "Amy Pond"], ["quantity", 5], ["unit_price", 10.0], ["updated_at", Thu, 02 Feb 2017 23:14:49 UTC +00:00]]
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["address", "123 Fake St"], ["created_at", Thu, 02 Feb 2017 23:14:49 UTC +00:00], ["description", "R$20 Sneakers for R$5"], ["provider", "Sneaker Store Emporium\n"], ["purchaser", "Marty McFly"], ["quantity", 1], ["unit_price", 5.0], ["updated_at", Thu, 02 Feb 2017 23:14:49 UTC +00:00]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "123 Fake St"], ["created_at", Thu, 02 Feb 2017 23:14:49 UTC +00:00], ["description", "R$20 Sneakers for R$5"], ["provider", "Sneaker Store Emporium\n"], ["purchaser", "Snake Plissken"], ["quantity", 4], ["unit_price", 5.0], ["updated_at", Thu, 02 Feb 2017 23:14:49 UTC +00:00]]
+  [1m[35m (129.9ms)[0m  commit transaction
+
+
+
+ Errors [#<Salle id: 46, purchaser: "João Silva", description: "R$10 off R$20 of food", unit_price: 10.0, quantity: 2, address: "987 Fake St", provider: "Bob's Pizza\n", created_at: "2017-02-02 23:14:49", updated_at: "2017-02-02 23:14:49">, #<Salle id: 47, purchaser: "Amy Pond", description: "R$30 of awesome for R$10", unit_price: 10.0, quantity: 5, address: "456 Unreal Rd", provider: "Tom's Awesome Shop\n", created_at: "2017-02-02 23:14:49", updated_at: "2017-02-02 23:14:49">, #<Salle id: 48, purchaser: "Marty McFly", description: "R$20 Sneakers for R$5", unit_price: 5.0, quantity: 1, address: "123 Fake St", provider: "Sneaker Store Emporium\n", created_at: "2017-02-02 23:14:49", updated_at: "2017-02-02 23:14:49">, #<Salle id: 49, purchaser: "Snake Plissken", description: "R$20 Sneakers for R$5", unit_price: 5.0, quantity: 4, address: "123 Fake St", provider: "Sneaker Store Emporium\n", created_at: "2017-02-02 23:14:49", updated_at: "2017-02-02 23:14:49">]
+
+
+
+
+
+
+ Saves [#<Salle id: 46, purchaser: "João Silva", description: "R$10 off R$20 of food", unit_price: 10.0, quantity: 2, address: "987 Fake St", provider: "Bob's Pizza\n", created_at: "2017-02-02 23:14:49", updated_at: "2017-02-02 23:14:49">, #<Salle id: 47, purchaser: "Amy Pond", description: "R$30 of awesome for R$10", unit_price: 10.0, quantity: 5, address: "456 Unreal Rd", provider: "Tom's Awesome Shop\n", created_at: "2017-02-02 23:14:49", updated_at: "2017-02-02 23:14:49">, #<Salle id: 48, purchaser: "Marty McFly", description: "R$20 Sneakers for R$5", unit_price: 5.0, quantity: 1, address: "123 Fake St", provider: "Sneaker Store Emporium\n", created_at: "2017-02-02 23:14:49", updated_at: "2017-02-02 23:14:49">, #<Salle id: 49, purchaser: "Snake Plissken", description: "R$20 Sneakers for R$5", unit_price: 5.0, quantity: 4, address: "123 Fake St", provider: "Sneaker Store Emporium\n", created_at: "2017-02-02 23:14:49", updated_at: "2017-02-02 23:14:49">]
+
+
+
+  Rendered salles/list_report.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 170ms (Views: 29.4ms | ActiveRecord: 131.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 21:14:50 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 21:14:50 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 21:14:50 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-02-02 21:14:50 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 21:14:50 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 21:14:50 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 21:14:50 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 21:14:50 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 21:14:50 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 21:14:50 -0200
+
+
+Started GET "/salles" for 127.0.0.1 at 2017-02-02 21:15:55 -0200
+Processing by SallesController#index as HTML
+  [1m[36mSalle Load (0.3ms)[0m  [1mSELECT "salles".* FROM "salles"[0m
+  Rendered salles/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 21:15:55 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-02-02 21:15:55 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 21:15:55 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 21:15:55 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 21:15:55 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 21:15:55 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 21:15:55 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 21:15:55 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 21:15:55 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 21:15:55 -0200
+
+
+Started GET "/salles/new" for 127.0.0.1 at 2017-02-02 21:15:57 -0200
+Processing by SallesController#new as HTML
+  Rendered salles/_form.html.erb (2.2ms)
+  Rendered salles/new.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 17ms (Views: 16.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/salles" for 127.0.0.1 at 2017-02-02 21:16:01 -0200
+Processing by SallesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"91g7KqzcBGRABjES/Cvp1m8iH1Abfl5J/+GgBquD1C0=", "salle"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x007f9f48b38460 @tempfile=#<Tempfile:/tmp/RackMultipart20170202-4767-1m9u7l2>, @original_filename="dados.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"salle[file]\"; filename=\"dados.txt\"\r\nContent-Type: text/plain\r\n">}, "commit"=>"Create Salle"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "987 Fake St"], ["created_at", Thu, 02 Feb 2017 23:16:01 UTC +00:00], ["description", "R$10 off R$20 of food"], ["provider", "Bob's Pizza\n"], ["purchaser", "João Silva"], ["quantity", 2], ["unit_price", 10.0], ["updated_at", Thu, 02 Feb 2017 23:16:01 UTC +00:00]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["address", "456 Unreal Rd"], ["created_at", Thu, 02 Feb 2017 23:16:01 UTC +00:00], ["description", "R$30 of awesome for R$10"], ["provider", "Tom's Awesome Shop\n"], ["purchaser", "Amy Pond"], ["quantity", 5], ["unit_price", 10.0], ["updated_at", Thu, 02 Feb 2017 23:16:01 UTC +00:00]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "123 Fake St"], ["created_at", Thu, 02 Feb 2017 23:16:01 UTC +00:00], ["description", "R$20 Sneakers for R$5"], ["provider", "Sneaker Store Emporium\n"], ["purchaser", "Marty McFly"], ["quantity", 1], ["unit_price", 5.0], ["updated_at", Thu, 02 Feb 2017 23:16:01 UTC +00:00]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["address", "123 Fake St"], ["created_at", Thu, 02 Feb 2017 23:16:01 UTC +00:00], ["description", "R$20 Sneakers for R$5"], ["provider", "Sneaker Store Emporium\n"], ["purchaser", "Snake Plissken"], ["quantity", 4], ["unit_price", 5.0], ["updated_at", Thu, 02 Feb 2017 23:16:01 UTC +00:00]]
+  [1m[36m (176.1ms)[0m  [1mcommit transaction[0m
+
+
+
+ Errors [#<Salle id: 50, purchaser: "João Silva", description: "R$10 off R$20 of food", unit_price: 10.0, quantity: 2, address: "987 Fake St", provider: "Bob's Pizza\n", created_at: "2017-02-02 23:16:01", updated_at: "2017-02-02 23:16:01">, #<Salle id: 51, purchaser: "Amy Pond", description: "R$30 of awesome for R$10", unit_price: 10.0, quantity: 5, address: "456 Unreal Rd", provider: "Tom's Awesome Shop\n", created_at: "2017-02-02 23:16:01", updated_at: "2017-02-02 23:16:01">, #<Salle id: 52, purchaser: "Marty McFly", description: "R$20 Sneakers for R$5", unit_price: 5.0, quantity: 1, address: "123 Fake St", provider: "Sneaker Store Emporium\n", created_at: "2017-02-02 23:16:01", updated_at: "2017-02-02 23:16:01">, #<Salle id: 53, purchaser: "Snake Plissken", description: "R$20 Sneakers for R$5", unit_price: 5.0, quantity: 4, address: "123 Fake St", provider: "Sneaker Store Emporium\n", created_at: "2017-02-02 23:16:01", updated_at: "2017-02-02 23:16:01">]
+
+
+
+
+
+
+ Saves [#<Salle id: 50, purchaser: "João Silva", description: "R$10 off R$20 of food", unit_price: 10.0, quantity: 2, address: "987 Fake St", provider: "Bob's Pizza\n", created_at: "2017-02-02 23:16:01", updated_at: "2017-02-02 23:16:01">, #<Salle id: 51, purchaser: "Amy Pond", description: "R$30 of awesome for R$10", unit_price: 10.0, quantity: 5, address: "456 Unreal Rd", provider: "Tom's Awesome Shop\n", created_at: "2017-02-02 23:16:01", updated_at: "2017-02-02 23:16:01">, #<Salle id: 52, purchaser: "Marty McFly", description: "R$20 Sneakers for R$5", unit_price: 5.0, quantity: 1, address: "123 Fake St", provider: "Sneaker Store Emporium\n", created_at: "2017-02-02 23:16:01", updated_at: "2017-02-02 23:16:01">, #<Salle id: 53, purchaser: "Snake Plissken", description: "R$20 Sneakers for R$5", unit_price: 5.0, quantity: 4, address: "123 Fake St", provider: "Sneaker Store Emporium\n", created_at: "2017-02-02 23:16:01", updated_at: "2017-02-02 23:16:01">]
+
+
+
+  Rendered salles/list_report.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 203ms (Views: 17.7ms | ActiveRecord: 177.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 21:16:01 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 21:16:01 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 21:16:01 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-02-02 21:16:01 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 21:16:01 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 21:16:01 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 21:16:01 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 21:16:01 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 21:16:01 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 21:16:01 -0200
+
+
+Started GET "/salles" for 127.0.0.1 at 2017-02-02 21:16:35 -0200
+Processing by SallesController#index as HTML
+  [1m[35mSalle Load (0.2ms)[0m  SELECT "salles".* FROM "salles"
+  Rendered salles/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 21:16:35 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 21:16:35 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-02-02 21:16:35 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 21:16:35 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 21:16:35 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 21:16:35 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 21:16:35 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 21:16:35 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 21:16:35 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 21:16:35 -0200
+
+
+Started GET "/salles" for 127.0.0.1 at 2017-02-02 21:21:40 -0200
+Processing by SallesController#index as HTML
+  [1m[36mSalle Load (0.2ms)[0m  [1mSELECT "salles".* FROM "salles"[0m
+  Rendered salles/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 21:21:40 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 21:21:40 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 21:21:40 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 21:21:40 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 21:21:40 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 21:21:40 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 21:21:40 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-02-02 21:21:40 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 21:21:40 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 21:21:40 -0200
+
+
+Started POST "/salles" for 127.0.0.1 at 2017-02-02 21:21:47 -0200
+Processing by SallesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"91g7KqzcBGRABjES/Cvp1m8iH1Abfl5J/+GgBquD1C0=", "file"=>#<ActionDispatch::Http::UploadedFile:0x0055ee1d031c48 @tempfile=#<Tempfile:/tmp/RackMultipart20170202-4767-1www5wo>, @original_filename="dados.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"dados.txt\"\r\nContent-Type: text/plain\r\n">, "commit"=>"Save changes"}
+Completed 400 Bad Request in 0ms
+
+ActionController::ParameterMissing (param not found: salle):
+  app/controllers/salles_controller.rb:59:in `salle_params'
+  app/controllers/salles_controller.rb:18:in `create'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (2.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (34.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 21:24:41 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (18.2ms)
+Completed 200 OK in 32ms (Views: 28.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 21:24:41 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 21:24:41 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 21:24:41 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 21:24:41 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-02-02 21:24:41 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 21:24:41 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 21:24:41 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 21:24:41 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 21:24:41 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 21:24:41 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 21:24:56 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 11ms (Views: 10.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 21:30:50 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (15.0ms)
+Completed 200 OK in 24ms (Views: 21.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 21:30:50 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 21:30:50 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 21:30:50 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-02-02 21:30:50 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 21:30:50 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 21:30:50 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 21:30:50 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 21:30:50 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 21:30:50 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 21:30:50 -0200
+
+
+Started GET "/list-reports" for 127.0.0.1 at 2017-02-02 21:30:51 -0200
+Processing by SallesController#list_report as HTML
+  Rendered salles/list_report.html.erb within layouts/application (2.2ms)
+Completed 500 Internal Server Error in 4ms
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     6: 
+     7: <div id="error_explanation">
+     8:   <ul>
+     9:     <% @errors.each do |msg| %>
+    10:       <li><%= msg %></li>
+    11:     <% end %>
+    12:   </ul>
+  app/views/salles/list_report.html.erb:9:in `_app_views_salles_list_report_html_erb__3008279305662880011_47240595477740'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.1ms)
+
+
+Started GET "/list-reports" for 127.0.0.1 at 2017-02-02 21:31:59 -0200
+Processing by SallesController#list_report as HTML
+  [1m[35mSalle Load (0.3ms)[0m  SELECT "salles".* FROM "salles"
+  Rendered salles/list_report.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 14ms (Views: 13.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 21:31:59 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 21:31:59 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 21:31:59 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-02-02 21:31:59 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 21:31:59 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 21:31:59 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 21:31:59 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 21:31:59 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 21:31:59 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 21:31:59 -0200
+
+
+Started GET "/list-reports" for 127.0.0.1 at 2017-02-02 21:39:08 -0200
+Processing by SallesController#list_report as HTML
+  [1m[36mSalle Load (0.3ms)[0m  [1mSELECT "salles".* FROM "salles"[0m
+  Rendered salles/list_report.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 21:39:08 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-02-02 21:39:08 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 21:39:08 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 21:39:08 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 21:39:08 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 21:39:08 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 21:39:08 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 21:39:08 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 21:39:08 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 21:39:08 -0200
+
+
+Started GET "/list-reports" for 127.0.0.1 at 2017-02-02 21:39:55 -0200
+Processing by SallesController#list_report as HTML
+  [1m[35mSalle Load (0.3ms)[0m  SELECT "salles".* FROM "salles"
+  Rendered salles/list_report.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 20ms (Views: 19.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 21:39:55 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 21:39:55 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 21:39:55 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 21:39:55 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-02-02 21:39:55 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 21:39:55 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 21:39:55 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 21:39:55 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 21:39:55 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 21:39:55 -0200
+
+
+Started GET "/list-reports" for 127.0.0.1 at 2017-02-02 21:40:18 -0200
+Processing by SallesController#list_report as HTML
+  [1m[36mSalle Load (0.3ms)[0m  [1mSELECT "salles".* FROM "salles"[0m
+  Rendered salles/list_report.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 21:40:18 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 21:40:18 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 21:40:18 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-02-02 21:40:18 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 21:40:18 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 21:40:18 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 21:40:18 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 21:40:18 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 21:40:18 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 21:40:18 -0200
+
+
+Started GET "/list-reports" for 127.0.0.1 at 2017-02-02 21:40:52 -0200
+Processing by SallesController#list_report as HTML
+  [1m[35mSalle Load (0.3ms)[0m  SELECT "salles".* FROM "salles"
+  Rendered salles/list_report.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 21:40:52 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-02-02 21:40:52 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 21:40:52 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 21:40:52 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 21:40:52 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 21:40:52 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 21:40:52 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 21:40:52 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 21:40:52 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 21:40:52 -0200
+
+
+Started GET "/list-reports" for 127.0.0.1 at 2017-02-02 21:41:23 -0200
+Processing by SallesController#list_report as HTML
+  [1m[36mSalle Load (0.3ms)[0m  [1mSELECT "salles".* FROM "salles"[0m
+  Rendered salles/list_report.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 21:41:23 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 21:41:23 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 21:41:23 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-02-02 21:41:23 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 21:41:23 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 21:41:23 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 21:41:23 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 21:41:23 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 21:41:23 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 21:41:23 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 21:42:28 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 21:43:49 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 13ms (Views: 10.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 21:43:49 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 21:43:49 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 21:43:49 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-02-02 21:43:49 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 21:43:50 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 21:43:50 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 21:43:50 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 21:43:50 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 21:43:50 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 21:43:50 -0200
+
+
+Started POST "/" for 127.0.0.1 at 2017-02-02 21:43:57 -0200
+
+ActionController::RoutingError (No route matches [POST] "/"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (9.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (40.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 21:45:30 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 21:45:31 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-02-02 21:45:31 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 21:45:31 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 21:45:31 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 21:45:31 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 21:45:31 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 21:45:31 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 21:45:31 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 21:45:31 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 21:45:31 -0200
+
+
+Started POST "/report" for 127.0.0.1 at 2017-02-02 21:45:34 -0200
+Processing by SallesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"91g7KqzcBGRABjES/Cvp1m8iH1Abfl5J/+GgBquD1C0=", "file"=>"dados.txt", "commit"=>"Save changes"}
+Completed 400 Bad Request in 0ms
+
+ActionController::ParameterMissing (param not found: salle):
+  app/controllers/salles_controller.rb:47:in `salle_params'
+  app/controllers/salles_controller.rb:13:in `create'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 21:46:21 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (30.6ms)
+Completed 500 Internal Server Error in 33ms
+
+ActionView::Template::Error (undefined method `salles_path' for #<#<Class:0x0055ee1ddfd6d8>:0x007f9f48c42a40>):
+    1: <%= form_for @salle, html: { multipart: true } do |f| %>
+    2:   <%= f.label :file %><br>
+    3:   <%= f.file_field :file %>
+    4: 
+  app/views/salles/index.html.erb:1:in `_app_views_salles_index_html_erb__3343046589996431662_70161048669220'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (6.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 21:47:54 -0200
+
+AbstractController::ActionNotFound (The action 'indes' could not be found for SallesController):
+  actionpack (4.0.0) lib/abstract_controller/base.rb:131:in `process'
+  actionpack (4.0.0) lib/abstract_controller/rendering.rb:44:in `process'
+  actionpack (4.0.0) lib/action_controller/metal.rb:195:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.0.0) lib/action_controller/metal.rb:231:in `block in action'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:80:in `dispatch'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:48:in `call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:71:in `block in call'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `each'
+  actionpack (4.0.0) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.0.0) lib/action_dispatch/routing/route_set.rb:655:in `call'
+  rack (1.5.5) lib/rack/etag.rb:23:in `call'
+  rack (1.5.5) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.5.5) lib/rack/head.rb:11:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/flash.rb:241:in `call'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/cookies.rb:486:in `call'
+  activerecord (4.0.0) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.0.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:626:in `call'
+  activerecord (4.0.0) lib/active_record/migration.rb:369:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:373:in `_run__4031814964607328160__call__callbacks'
+  activesupport (4.0.0) lib/active_support/callbacks.rb:80:in `run_callbacks'
+  actionpack (4.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/unknown_action.erb within rescues/layout (0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 21:48:03 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (36.4ms)
+Completed 500 Internal Server Error in 47ms
+
+ActionView::Template::Error (undefined method `salles_path' for #<#<Class:0x007f9f3c01dfa0>:0x007f9f3c01d190>
+Did you mean?  salles_path_url):
+    1: <%= form_for @salle, html: { multipart: true } do |f| %>
+    2:   <%= f.label :file %><br>
+    3:   <%= f.file_field :file %>
+    4: 
+  app/views/salles/index.html.erb:1:in `_app_views_salles_index_html_erb__3343046589996431662_70161048669220'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (8.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 21:48:44 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 21:48:44 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 21:48:44 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 21:48:44 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 21:48:44 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 21:48:44 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 21:48:44 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 21:48:44 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 21:48:44 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-02-02 21:48:44 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 21:48:44 -0200
+
+
+Started POST "/" for 127.0.0.1 at 2017-02-02 21:48:50 -0200
+
+ActionController::RoutingError (No route matches [POST] "/"):
+  actionpack (4.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `block in call'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `block in tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:25:in `tagged'
+  activesupport (4.0.0) lib/active_support/tagged_logging.rb:67:in `tagged'
+  railties (4.0.0) lib/rails/rack/logger.rb:21:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.0.0) lib/active_support/cache/strategy/local_cache.rb:83:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.0.0) lib/action_dispatch/middleware/static.rb:64:in `call'
+  railties (4.0.0) lib/rails/engine.rb:511:in `call'
+  railties (4.0.0) lib/rails/application.rb:97:in `call'
+  rack (1.5.5) lib/rack/lock.rb:17:in `call'
+  rack (1.5.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.5) lib/rack/handler/webrick.rb:60:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (10.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 21:49:24 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 13ms (Views: 8.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 21:49:24 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 21:49:24 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 21:49:24 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 21:49:24 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-02-02 21:49:24 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 21:49:24 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 21:49:24 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 21:49:24 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 21:49:24 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 21:49:24 -0200
+
+
+Started POST "/" for 127.0.0.1 at 2017-02-02 21:49:25 -0200
+Processing by SallesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"91g7KqzcBGRABjES/Cvp1m8iH1Abfl5J/+GgBquD1C0=", "http://localhost:3000/"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x007f9f405d2500 @tempfile=#<Tempfile:/tmp/RackMultipart20170202-4767-1kgkbdg>, @original_filename="dados.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"http://localhost:3000/[file]\"; filename=\"dados.txt\"\r\nContent-Type: text/plain\r\n">}, "commit"=>"Save Http://localhost:3000/"}
+Completed 400 Bad Request in 1ms
+
+ActionController::ParameterMissing (param not found: salle):
+  app/controllers/salles_controller.rb:47:in `salle_params'
+  app/controllers/salles_controller.rb:13:in `create'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (2.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.6ms)
+
+
+Started POST "/" for 127.0.0.1 at 2017-02-02 21:49:57 -0200
+Processing by SallesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"91g7KqzcBGRABjES/Cvp1m8iH1Abfl5J/+GgBquD1C0=", "http://localhost:3000/"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x007f9f4049e508 @tempfile=#<Tempfile:/tmp/RackMultipart20170202-4767-hfpi1>, @original_filename="dados.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"http://localhost:3000/[file]\"; filename=\"dados.txt\"\r\nContent-Type: text/plain\r\n">}, "commit"=>"Save Http://localhost:3000/"}
+Completed 400 Bad Request in 1ms
+
+ActionController::ParameterMissing (param not found: file):
+  app/controllers/salles_controller.rb:47:in `salle_params'
+  app/controllers/salles_controller.rb:13:in `create'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.8ms)
+
+
+Started POST "/" for 127.0.0.1 at 2017-02-02 21:50:24 -0200
+Processing by SallesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"91g7KqzcBGRABjES/Cvp1m8iH1Abfl5J/+GgBquD1C0=", "http://localhost:3000/"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x007f9f3c0169f8 @tempfile=#<Tempfile:/tmp/RackMultipart20170202-4767-lboojq>, @original_filename="dados.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"http://localhost:3000/[file]\"; filename=\"dados.txt\"\r\nContent-Type: text/plain\r\n">}, "commit"=>"Save Http://localhost:3000/"}
+Unpermitted parameters: utf8, authenticity_token, http://localhost:3000/, commit
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `read' for nil:NilClass):
+  app/controllers/salles_controller.rb:13:in `create'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 21:50:39 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 12ms (Views: 9.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 21:50:39 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 21:50:39 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 21:50:39 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-02-02 21:50:39 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 21:50:39 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 21:50:39 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 21:50:39 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 21:50:39 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 21:50:39 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 21:50:39 -0200
+
+
+Started POST "/" for 127.0.0.1 at 2017-02-02 21:50:43 -0200
+Processing by SallesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"91g7KqzcBGRABjES/Cvp1m8iH1Abfl5J/+GgBquD1C0=", "http://localhost:3000/"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x007f9f48c98e90 @tempfile=#<Tempfile:/tmp/RackMultipart20170202-4767-1teibdc>, @original_filename="dados.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"http://localhost:3000/[file]\"; filename=\"dados.txt\"\r\nContent-Type: text/plain\r\n">}, "commit"=>"Save Http://localhost:3000/"}
+Unpermitted parameters: utf8, authenticity_token, http://localhost:3000/, commit
+Completed 500 Internal Server Error in 2ms
+
+NoMethodError (undefined method `read' for nil:NilClass):
+  app/controllers/salles_controller.rb:13:in `create'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (14.1ms)
+
+
+Started POST "/" for 127.0.0.1 at 2017-02-02 21:52:07 -0200
+Processing by SallesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"91g7KqzcBGRABjES/Cvp1m8iH1Abfl5J/+GgBquD1C0=", "http://localhost:3000/"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x007f9f488b0440 @tempfile=#<Tempfile:/tmp/RackMultipart20170202-4767-a96zgn>, @original_filename="dados.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"http://localhost:3000/[file]\"; filename=\"dados.txt\"\r\nContent-Type: text/plain\r\n">}, "commit"=>"Save Http://localhost:3000/"}
+Completed 400 Bad Request in 1ms
+
+ActionController::ParameterMissing (param not found: salle):
+  app/controllers/salles_controller.rb:47:in `salle_params'
+  app/controllers/salles_controller.rb:13:in `create'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 21:52:09 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 23ms (Views: 16.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 21:52:10 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 21:52:10 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 21:52:10 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-02-02 21:52:10 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 21:52:10 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 21:52:10 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 21:52:10 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 21:52:10 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 21:52:10 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 21:52:10 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 21:52:12 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 21:52:12 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 21:52:12 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 21:52:12 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-02-02 21:52:12 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 21:52:12 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 21:52:12 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 21:52:12 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 21:52:12 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 21:52:12 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 21:52:12 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 21:54:07 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 29ms (Views: 26.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 21:54:07 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 21:54:07 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 21:54:07 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-02-02 21:54:07 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 21:54:07 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 21:54:07 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 21:54:07 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 21:54:07 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 21:54:07 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 21:54:07 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 21:54:08 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 21:54:08 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 21:54:08 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 21:54:08 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-02-02 21:54:08 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 21:54:08 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 21:54:08 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 21:54:08 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 21:54:08 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 21:54:08 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 21:54:08 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 21:54:08 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 11ms (Views: 10.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 21:54:08 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 21:54:08 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 21:54:08 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 21:54:08 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 21:54:08 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-02-02 21:54:08 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 21:54:08 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 21:54:08 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 21:54:08 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 21:54:08 -0200
+
+
+Started GET "/list-reports" for 127.0.0.1 at 2017-02-02 21:54:20 -0200
+Processing by SallesController#list_report as HTML
+  [1m[35mSalle Load (0.2ms)[0m  SELECT "salles".* FROM "salles"
+  Rendered salles/list_report.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 21:54:24 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 21:55:15 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 13ms (Views: 12.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 21:55:15 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 21:55:15 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 21:55:15 -0200
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2017-02-02 21:55:15 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 21:55:15 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 21:55:15 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 21:55:15 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 21:55:15 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 21:55:15 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 21:55:15 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 21:57:23 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 34ms (Views: 33.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 21:57:23 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 21:57:23 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 21:57:23 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 21:57:23 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 21:57:23 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 21:57:23 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 21:57:23 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 21:57:23 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 21:57:23 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 21:57:24 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 11ms (Views: 10.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 21:57:24 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 21:57:24 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 21:57:24 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 21:57:24 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 21:57:24 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 21:57:24 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 21:57:24 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 21:57:24 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 21:57:24 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 21:57:31 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 42ms (Views: 41.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 21:57:31 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 21:57:31 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 21:57:31 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 21:57:31 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 21:57:31 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 21:57:31 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 21:57:31 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 21:57:31 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 21:57:31 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 21:57:53 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 35ms (Views: 34.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 21:57:53 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 21:57:53 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 21:57:53 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 21:57:53 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 21:57:53 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 21:57:53 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 21:57:53 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 21:57:53 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 21:57:53 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 21:58:07 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 37ms (Views: 36.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 21:58:07 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 21:58:07 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 21:58:07 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 21:58:07 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 21:58:07 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 21:58:07 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 21:58:07 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 21:58:07 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 21:58:07 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 21:58:29 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 38ms (Views: 37.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 21:58:29 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 21:58:29 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 21:58:29 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 21:58:29 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 21:58:29 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 21:58:29 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 21:58:29 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 21:58:29 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 21:58:29 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 21:58:57 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 27ms (Views: 26.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 21:58:57 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 21:58:57 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 21:58:57 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 21:58:57 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 21:58:57 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 21:58:57 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 21:58:57 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 21:58:57 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 21:58:57 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 21:58:58 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 21:58:58 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 21:58:58 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 21:58:58 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 21:58:58 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 21:58:58 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 21:58:58 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 21:58:58 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 21:58:58 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 21:58:58 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 21:58:59 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 11ms (Views: 10.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 21:58:59 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 21:58:59 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 21:58:59 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 21:58:59 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 21:58:59 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 21:58:59 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 21:58:59 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 21:58:59 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 21:58:59 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 21:58:59 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 7ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 21:58:59 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 21:58:59 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 21:58:59 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 21:58:59 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 21:58:59 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 21:58:59 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 21:58:59 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 21:58:59 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 21:58:59 -0200
+
+
+Started GET "/list-reports" for 127.0.0.1 at 2017-02-02 21:59:25 -0200
+Processing by SallesController#list_report as HTML
+  [1m[36mSalle Load (0.3ms)[0m  [1mSELECT "salles".* FROM "salles"[0m
+  Rendered salles/list_report.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 21:59:28 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 13ms (Views: 11.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 22:00:39 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 22:00:39 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 22:00:39 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 22:00:39 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 22:00:39 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 22:00:39 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 22:00:39 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 22:00:39 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 22:00:39 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 22:00:39 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 22:00:58 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 22:00:58 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 22:00:58 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 22:00:58 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 22:00:58 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 22:00:58 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 22:00:58 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 22:00:58 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 22:00:58 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 22:00:58 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 22:01:44 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 22:01:44 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 22:01:44 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 22:01:44 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 22:01:44 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 22:01:44 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 22:01:44 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 22:01:44 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 22:01:44 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 22:01:44 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 22:06:40 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 25ms (Views: 24.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 22:06:40 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 22:06:40 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 22:06:40 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 22:06:40 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 22:06:40 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 22:06:40 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 22:06:40 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 22:06:40 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 22:06:40 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 22:10:03 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 30ms (Views: 29.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 22:10:04 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 22:10:04 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 22:10:04 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 22:10:04 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 22:10:04 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 22:10:04 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 22:10:04 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 22:10:04 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 22:10:04 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 22:10:34 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 25ms (Views: 24.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 22:10:34 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 22:10:34 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 22:10:34 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 22:10:34 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 22:10:34 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 22:10:34 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 22:10:34 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 22:10:34 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 22:10:34 -0200
+
+
+Started POST "/salles" for 127.0.0.1 at 2017-02-02 22:10:53 -0200
+Processing by SallesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"91g7KqzcBGRABjES/Cvp1m8iH1Abfl5J/+GgBquD1C0=", "salle"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x007f9f48e34f60 @tempfile=#<Tempfile:/tmp/RackMultipart20170202-4767-cl4mi3>, @original_filename="dados.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"salle[file]\"; filename=\"dados.txt\"\r\nContent-Type: text/plain\r\n">}, "commit"=>"Create Salle"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "987 Fake St"], ["created_at", Fri, 03 Feb 2017 00:10:53 UTC +00:00], ["description", "R$10 off R$20 of food"], ["provider", "Bob's Pizza\n"], ["purchaser", "João Silva"], ["quantity", 2], ["unit_price", 10.0], ["updated_at", Fri, 03 Feb 2017 00:10:53 UTC +00:00]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["address", "456 Unreal Rd"], ["created_at", Fri, 03 Feb 2017 00:10:53 UTC +00:00], ["description", "R$30 of awesome for R$10"], ["provider", "Tom's Awesome Shop\n"], ["purchaser", "Amy Pond"], ["quantity", 5], ["unit_price", 10.0], ["updated_at", Fri, 03 Feb 2017 00:10:53 UTC +00:00]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "123 Fake St"], ["created_at", Fri, 03 Feb 2017 00:10:53 UTC +00:00], ["description", "R$20 Sneakers for R$5"], ["provider", "Sneaker Store Emporium\n"], ["purchaser", "Marty McFly"], ["quantity", 1], ["unit_price", 5.0], ["updated_at", Fri, 03 Feb 2017 00:10:53 UTC +00:00]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["address", "123 Fake St"], ["created_at", Fri, 03 Feb 2017 00:10:53 UTC +00:00], ["description", "R$20 Sneakers for R$5"], ["provider", "Sneaker Store Emporium\n"], ["purchaser", "Snake Plissken"], ["quantity", 4], ["unit_price", 5.0], ["updated_at", Fri, 03 Feb 2017 00:10:53 UTC +00:00]]
+  [1m[36m (161.3ms)[0m  [1mcommit transaction[0m
+  Rendered salles/list_report.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 195ms (Views: 26.2ms | ActiveRecord: 162.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 22:10:53 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 22:10:53 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 22:10:53 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 22:10:53 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 22:10:53 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 22:10:53 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 22:10:53 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 22:10:53 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 22:10:53 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 22:12:07 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/list-reports" for 127.0.0.1 at 2017-02-02 22:12:09 -0200
+Processing by SallesController#list_report as HTML
+  [1m[35mSalle Load (0.2ms)[0m  SELECT "salles".* FROM "salles"
+  Rendered salles/list_report.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/list-reports" for 127.0.0.1 at 2017-02-02 22:12:58 -0200
+Processing by SallesController#list_report as HTML
+  [1m[36mSalle Load (0.2ms)[0m  [1mSELECT "salles".* FROM "salles"[0m
+  Rendered salles/list_report.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 8ms (Views: 7.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 22:12:58 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 22:12:58 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 22:12:58 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 22:12:58 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 22:12:58 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 22:12:58 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 22:12:58 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 22:12:58 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 22:12:58 -0200
+
+
+Started GET "/list-reports" for 127.0.0.1 at 2017-02-02 22:13:21 -0200
+Processing by SallesController#list_report as HTML
+  [1m[35mSalle Load (0.3ms)[0m  SELECT "salles".* FROM "salles"
+  Rendered salles/list_report.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 22:13:21 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 22:13:21 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 22:13:21 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 22:13:21 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 22:13:21 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 22:13:21 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 22:13:21 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 22:13:21 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 22:13:21 -0200
+
+
+Started GET "/list-reports" for 127.0.0.1 at 2017-02-02 22:13:44 -0200
+Processing by SallesController#list_report as HTML
+  [1m[36mSalle Load (0.2ms)[0m  [1mSELECT "salles".* FROM "salles"[0m
+  Rendered salles/list_report.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 22:13:44 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 22:13:44 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 22:13:44 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 22:13:44 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 22:13:44 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 22:13:44 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 22:13:44 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 22:13:44 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 22:13:44 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 22:14:15 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/salles" for 127.0.0.1 at 2017-02-02 22:14:19 -0200
+Processing by SallesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"91g7KqzcBGRABjES/Cvp1m8iH1Abfl5J/+GgBquD1C0=", "salle"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x0055ee1de8a7b8 @tempfile=#<Tempfile:/tmp/RackMultipart20170202-4767-16zti6k>, @original_filename="dados.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"salle[file]\"; filename=\"dados.txt\"\r\nContent-Type: text/plain\r\n">}, "commit"=>"Create Salle"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "987 Fake St"], ["created_at", Fri, 03 Feb 2017 00:14:19 UTC +00:00], ["description", "R$10 off R$20 of food"], ["provider", "Bob's Pizza\n"], ["purchaser", "João Silva"], ["quantity", 2], ["unit_price", 10.0], ["updated_at", Fri, 03 Feb 2017 00:14:19 UTC +00:00]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["address", "456 Unreal Rd"], ["created_at", Fri, 03 Feb 2017 00:14:19 UTC +00:00], ["description", "R$30 of awesome for R$10"], ["provider", "Tom's Awesome Shop\n"], ["purchaser", "Amy Pond"], ["quantity", 5], ["unit_price", 10.0], ["updated_at", Fri, 03 Feb 2017 00:14:19 UTC +00:00]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "123 Fake St"], ["created_at", Fri, 03 Feb 2017 00:14:19 UTC +00:00], ["description", "R$20 Sneakers for R$5"], ["provider", "Sneaker Store Emporium\n"], ["purchaser", "Marty McFly"], ["quantity", 1], ["unit_price", 5.0], ["updated_at", Fri, 03 Feb 2017 00:14:19 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["address", "123 Fake St"], ["created_at", Fri, 03 Feb 2017 00:14:19 UTC +00:00], ["description", "R$20 Sneakers for R$5"], ["provider", "Sneaker Store Emporium\n"], ["purchaser", "Snake Plissken"], ["quantity", 4], ["unit_price", 5.0], ["updated_at", Fri, 03 Feb 2017 00:14:19 UTC +00:00]]
+  [1m[36m (181.8ms)[0m  [1mcommit transaction[0m
+  Rendered salles/list_report.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 198ms (Views: 9.9ms | ActiveRecord: 182.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 22:14:19 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 22:14:19 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 22:14:19 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 22:14:19 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 22:14:19 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 22:14:19 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 22:14:19 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 22:14:19 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 22:14:19 -0200
+
+
+Started GET "/salles" for 127.0.0.1 at 2017-02-02 22:15:13 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 22:15:13 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 22:15:13 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 22:15:13 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 22:15:13 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 22:15:13 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 22:15:13 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 22:15:13 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 22:15:13 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 22:15:13 -0200
+
+
+Started GET "/list-reports" for 127.0.0.1 at 2017-02-02 22:15:15 -0200
+Processing by SallesController#list_report as HTML
+  [1m[35mSalle Load (0.3ms)[0m  SELECT "salles".* FROM "salles"
+  Rendered salles/list_report.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 21ms (Views: 20.3ms | ActiveRecord: 0.3ms)
+  [1m[36mSQL (204.5ms)[0m  [1mDELETE FROM "salles"[0m
+
+
+Started GET "/list-reports" for 127.0.0.1 at 2017-02-02 22:15:58 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by SallesController#list_report as HTML
+  [1m[35mSalle Load (0.4ms)[0m  SELECT "salles".* FROM "salles"
+  Rendered salles/list_report.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 50ms (Views: 41.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 22:15:58 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 22:15:58 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 22:15:58 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 22:15:58 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 22:15:58 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 22:15:58 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 22:15:58 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 22:15:58 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 22:15:58 -0200
+
+
+Started GET "/list-reports" for 127.0.0.1 at 2017-02-02 22:16:46 -0200
+Processing by SallesController#list_report as HTML
+  [1m[36mSalle Load (0.2ms)[0m  [1mSELECT "salles".* FROM "salles"[0m
+  Rendered salles/list_report.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 22:16:46 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 22:16:46 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 22:16:46 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 22:16:46 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 22:16:46 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 22:16:46 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 22:16:46 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 22:16:46 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 22:16:46 -0200
+
+
+Started GET "/list-reports" for 127.0.0.1 at 2017-02-02 22:17:37 -0200
+Processing by SallesController#list_report as HTML
+  [1m[35mSalle Load (0.2ms)[0m  SELECT "salles".* FROM "salles"
+  Rendered salles/list_report.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 22:17:37 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 22:17:37 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 22:17:37 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 22:17:37 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 22:17:37 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 22:17:37 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 22:17:37 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 22:17:37 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 22:17:37 -0200
+
+
+Started GET "/list-reports" for 127.0.0.1 at 2017-02-02 22:19:33 -0200
+Processing by SallesController#list_report as HTML
+  [1m[36mSalle Load (0.1ms)[0m  [1mSELECT "salles".* FROM "salles"[0m
+  Rendered salles/list_report.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 22:19:33 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 22:19:33 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 22:19:33 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 22:19:33 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 22:19:33 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 22:19:33 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 22:19:33 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 22:19:33 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 22:19:33 -0200
+
+
+Started GET "/list-reports" for 127.0.0.1 at 2017-02-02 22:21:05 -0200
+Processing by SallesController#list_report as HTML
+  [1m[35mSalle Load (0.1ms)[0m  SELECT "salles".* FROM "salles"
+  Rendered salles/list_report.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 22:21:05 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 22:21:05 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 22:21:05 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 22:21:05 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 22:21:05 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 22:21:05 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 22:21:05 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 22:21:05 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 22:21:05 -0200
+
+
+Started GET "/list-reports" for 127.0.0.1 at 2017-02-02 22:21:18 -0200
+Processing by SallesController#list_report as HTML
+  [1m[36mSalle Load (0.2ms)[0m  [1mSELECT "salles".* FROM "salles"[0m
+  Rendered salles/list_report.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 22:21:18 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 22:21:18 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 22:21:18 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 22:21:18 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 22:21:18 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 22:21:18 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 22:21:18 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 22:21:18 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 22:21:18 -0200
+
+
+Started GET "/list-reports" for 127.0.0.1 at 2017-02-02 22:22:06 -0200
+Processing by SallesController#list_report as HTML
+  [1m[35mSalle Load (0.2ms)[0m  SELECT "salles".* FROM "salles"
+  Rendered salles/list_report.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 22:22:06 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 22:22:06 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 22:22:06 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 22:22:06 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 22:22:06 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 22:22:06 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 22:22:06 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 22:22:06 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 22:22:06 -0200
+
+
+Started GET "/list-reports" for 127.0.0.1 at 2017-02-02 22:23:02 -0200
+Processing by SallesController#list_report as HTML
+  [1m[36mSalle Load (0.1ms)[0m  [1mSELECT "salles".* FROM "salles"[0m
+  Rendered salles/list_report.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 10ms (Views: 9.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 22:23:02 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 22:23:02 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 22:23:02 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 22:23:02 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 22:23:02 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 22:23:02 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 22:23:02 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 22:23:02 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 22:23:02 -0200
+
+
+Started GET "/list-reports" for 127.0.0.1 at 2017-02-02 22:23:22 -0200
+Processing by SallesController#list_report as HTML
+  [1m[35mSalle Load (0.1ms)[0m  SELECT "salles".* FROM "salles"
+  Rendered salles/list_report.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 8ms (Views: 7.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 22:23:22 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 22:23:22 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 22:23:22 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 22:23:22 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 22:23:22 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 22:23:22 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 22:23:22 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 22:23:22 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 22:23:22 -0200
+
+
+Started GET "/list-reports" for 127.0.0.1 at 2017-02-02 22:23:51 -0200
+Processing by SallesController#list_report as HTML
+  [1m[36mSalle Load (0.1ms)[0m  [1mSELECT "salles".* FROM "salles"[0m
+  Rendered salles/list_report.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 8ms (Views: 7.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 22:23:52 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 22:23:52 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 22:23:52 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 22:23:52 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 22:23:52 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 22:23:52 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 22:23:52 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 22:23:52 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 22:23:52 -0200
+
+
+Started GET "/list-reports" for 127.0.0.1 at 2017-02-02 22:24:24 -0200
+Processing by SallesController#list_report as HTML
+  [1m[35mSalle Load (0.1ms)[0m  SELECT "salles".* FROM "salles"
+  Rendered salles/list_report.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 22:24:24 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 22:24:24 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 22:24:24 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 22:24:24 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 22:24:24 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 22:24:24 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 22:24:24 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 22:24:24 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 22:24:24 -0200
+
+
+Started GET "/list-reports" for 127.0.0.1 at 2017-02-02 22:40:00 -0200
+Processing by SallesController#list_report as HTML
+  [1m[36mSalle Load (0.3ms)[0m  [1mSELECT "salles".* FROM "salles"[0m
+  Rendered salles/list_report.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 9ms (Views: 6.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 22:40:00 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 22:40:00 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 22:40:00 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 22:40:00 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 22:40:00 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 22:40:00 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 22:40:00 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 22:40:00 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 22:40:00 -0200
