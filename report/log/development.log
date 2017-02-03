@@ -5830,3 +5830,1477 @@ Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 22:40:00 -020
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 22:40:00 -0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 22:48:38 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (26.5ms)
+Completed 200 OK in 64ms (Views: 52.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 22:48:38 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 22:48:38 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 22:48:38 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 22:48:38 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 22:48:38 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 22:48:38 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 22:48:38 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 22:48:38 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 22:48:38 -0200
+
+
+Started POST "/salles" for 127.0.0.1 at 2017-02-02 22:48:40 -0200
+Processing by SallesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"91g7KqzcBGRABjES/Cvp1m8iH1Abfl5J/+GgBquD1C0=", "commit"=>"Create Salle"}
+Completed 400 Bad Request in 1ms
+
+ActionController::ParameterMissing (param not found: salle):
+  app/controllers/salles_controller.rb:48:in `salle_params'
+  app/controllers/salles_controller.rb:13:in `create'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (1.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.3ms)
+
+
+Started POST "/salles" for 127.0.0.1 at 2017-02-02 22:48:52 -0200
+Processing by SallesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"91g7KqzcBGRABjES/Cvp1m8iH1Abfl5J/+GgBquD1C0=", "salle"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x0055c53efc77c8 @tempfile=#<Tempfile:/tmp/RackMultipart20170202-11449-zphy62>, @original_filename="dados.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"salle[file]\"; filename=\"dados.txt\"\r\nContent-Type: text/plain\r\n">}, "commit"=>"Create Salle"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 1ms
+
+TypeError (no implicit conversion of String into Integer):
+  app/controllers/salles_controller.rb:30:in `*'
+  app/controllers/salles_controller.rb:30:in `block (2 levels) in create'
+  app/controllers/salles_controller.rb:18:in `each_line'
+  app/controllers/salles_controller.rb:18:in `block in create'
+  app/controllers/salles_controller.rb:17:in `create'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.1ms)
+
+
+Started POST "/salles" for 127.0.0.1 at 2017-02-02 22:49:37 -0200
+Processing by SallesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"91g7KqzcBGRABjES/Cvp1m8iH1Abfl5J/+GgBquD1C0=", "salle"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x0055c53dce2c70 @tempfile=#<Tempfile:/tmp/RackMultipart20170202-11449-10rm2os>, @original_filename="dados.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"salle[file]\"; filename=\"dados.txt\"\r\nContent-Type: text/plain\r\n">}, "commit"=>"Create Salle"}
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Completed 500 Internal Server Error in 26ms
+
+ActiveRecord::UnknownAttributeError (unknown attribute: total_price):
+  app/controllers/salles_controller.rb:23:in `block (2 levels) in create'
+  app/controllers/salles_controller.rb:18:in `each_line'
+  app/controllers/salles_controller.rb:18:in `block in create'
+  app/controllers/salles_controller.rb:17:in `create'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (11.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddTotalPriceToSalle (20170203005312)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.4ms)[0m  [1mALTER TABLE "salles" ADD "total_price" float[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170203005312"]]
+  [1m[36m (90.4ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.4ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (125.2ms)[0m  [1mDROP TABLE "uploads"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36m (125.7ms)[0m  [1mCREATE TABLE "salles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "purchaser" varchar(255), "description" varchar(255), "unit_price" float, "quantity" integer, "address" varchar(255), "provider" varchar(255), "created_at" datetime, "updated_at" datetime, "total_price" float) [0m
+  [1m[35m (140.1ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) 
+  [1m[36m (143.8ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.4ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (122.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170203005312')[0m
+
+
+Started GET "/salles" for 127.0.0.1 at 2017-02-02 23:09:40 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (27.9ms)
+Completed 200 OK in 70ms (Views: 59.4ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 23:09:40 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 23:09:40 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 23:09:40 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 23:09:40 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 23:09:40 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 23:09:40 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 23:09:40 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 23:09:40 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 23:09:40 -0200
+
+
+Started POST "/salles" for 127.0.0.1 at 2017-02-02 23:09:41 -0200
+Processing by SallesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"91g7KqzcBGRABjES/Cvp1m8iH1Abfl5J/+GgBquD1C0=", "commit"=>"Create Salle"}
+Completed 400 Bad Request in 1ms
+
+ActionController::ParameterMissing (param not found: salle):
+  app/controllers/salles_controller.rb:48:in `salle_params'
+  app/controllers/salles_controller.rb:13:in `create'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.3.0/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (9.8ms)
+
+
+Started POST "/salles" for 127.0.0.1 at 2017-02-02 23:09:52 -0200
+Processing by SallesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"91g7KqzcBGRABjES/Cvp1m8iH1Abfl5J/+GgBquD1C0=", "salle"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x007fa5d0c107f0 @tempfile=#<Tempfile:/tmp/RackMultipart20170202-12288-1t0v8wy>, @original_filename="dados.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"salle[file]\"; filename=\"dados.txt\"\r\nContent-Type: text/plain\r\n">}, "commit"=>"Create Salle"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (2.2ms)[0m  INSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "total_price", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address", "987 Fake St"], ["created_at", Fri, 03 Feb 2017 01:09:52 UTC +00:00], ["description", "R$10 off R$20 of food"], ["provider", "Bob's Pizza\n"], ["purchaser", "João Silva"], ["quantity", 2], ["total_price", 20.0], ["unit_price", 10.0], ["updated_at", Fri, 03 Feb 2017 01:09:52 UTC +00:00]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "total_price", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "456 Unreal Rd"], ["created_at", Fri, 03 Feb 2017 01:09:52 UTC +00:00], ["description", "R$30 of awesome for R$10"], ["provider", "Tom's Awesome Shop\n"], ["purchaser", "Amy Pond"], ["quantity", 5], ["total_price", 50.0], ["unit_price", 10.0], ["updated_at", Fri, 03 Feb 2017 01:09:52 UTC +00:00]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "total_price", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address", "123 Fake St"], ["created_at", Fri, 03 Feb 2017 01:09:52 UTC +00:00], ["description", "R$20 Sneakers for R$5"], ["provider", "Sneaker Store Emporium\n"], ["purchaser", "Marty McFly"], ["quantity", 1], ["total_price", 5.0], ["unit_price", 5.0], ["updated_at", Fri, 03 Feb 2017 01:09:52 UTC +00:00]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "salles" ("address", "created_at", "description", "purchaser", "quantity", "total_price", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "Sneaker Store Emporium\n"], ["created_at", Fri, 03 Feb 2017 01:09:52 UTC +00:00], ["description", "5.0"], ["purchaser", "Snake PlisskenR$20 Sneakers for R$5"], ["quantity", 123], ["total_price", 492.0], ["unit_price", 4.0], ["updated_at", Fri, 03 Feb 2017 01:09:52 UTC +00:00]]
+  [1m[35m (197.0ms)[0m  commit transaction
+  Rendered salles/list_report.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 219ms (Views: 13.6ms | ActiveRecord: 199.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 23:09:53 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 23:09:53 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 23:09:53 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 23:09:53 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 23:09:53 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 23:09:53 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 23:09:53 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 23:09:53 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 23:09:53 -0200
+
+
+Started GET "/salles" for 127.0.0.1 at 2017-02-02 23:10:17 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 23:10:17 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 23:10:17 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 23:10:17 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 23:10:17 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 23:10:17 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 23:10:17 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 23:10:17 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 23:10:17 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 23:10:17 -0200
+
+
+Started GET "/list-reports" for 127.0.0.1 at 2017-02-02 23:10:20 -0200
+Processing by SallesController#list_report as HTML
+  [1m[36mSalle Load (0.2ms)[0m  [1mSELECT "salles".* FROM "salles"[0m
+  Rendered salles/list_report.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 9ms (Views: 8.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/list-reports" for 127.0.0.1 at 2017-02-02 23:11:07 -0200
+Processing by SallesController#list_report as HTML
+  [1m[35mSalle Load (0.2ms)[0m  SELECT "salles".* FROM "salles"
+  Rendered salles/list_report.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 23:11:07 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 23:11:07 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 23:11:07 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 23:11:07 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 23:11:07 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 23:11:07 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 23:11:07 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 23:11:07 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 23:11:07 -0200
+
+
+Started GET "/list-reports" for 127.0.0.1 at 2017-02-02 23:11:09 -0200
+Processing by SallesController#list_report as HTML
+  [1m[36mSalle Load (0.2ms)[0m  [1mSELECT "salles".* FROM "salles"[0m
+  Rendered salles/list_report.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 9ms (Views: 7.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 23:11:09 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 23:11:09 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 23:11:09 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 23:11:09 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 23:11:09 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 23:11:09 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 23:11:09 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 23:11:09 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 23:11:09 -0200
+
+
+Started GET "/list-reports" for 127.0.0.1 at 2017-02-02 23:11:54 -0200
+Processing by SallesController#list_report as HTML
+  [1m[35mSalle Load (0.2ms)[0m  SELECT "salles".* FROM "salles"
+  Rendered salles/list_report.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 23:11:54 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 23:11:54 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 23:11:54 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 23:11:54 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 23:11:54 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 23:11:54 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 23:11:54 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 23:11:54 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 23:11:54 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 23:14:21 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 23:17:05 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 41ms (Views: 40.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 23:17:05 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 23:17:05 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 23:17:05 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 23:17:05 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 23:17:05 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 23:17:05 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 23:17:05 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 23:17:05 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 23:17:05 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 23:21:24 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 34ms (Views: 33.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 23:21:24 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 23:21:24 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 23:21:24 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 23:21:24 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 23:21:24 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 23:21:24 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 23:21:24 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 23:21:24 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 23:21:24 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 23:21:39 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 12ms (Views: 11.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 23:21:39 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 23:21:39 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 23:21:39 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 23:21:39 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 23:21:39 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 23:21:39 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 23:21:39 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 23:21:39 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 23:21:39 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 23:24:37 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 29ms (Views: 28.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 23:24:37 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 23:24:37 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 23:24:37 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 23:24:37 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 23:24:37 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 23:24:37 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 23:24:37 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 23:24:37 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 23:24:37 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 23:25:27 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 35ms (Views: 34.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 23:25:27 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 23:25:27 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 23:25:27 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 23:25:27 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 23:25:27 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 23:25:27 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 23:25:27 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 23:25:27 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 23:25:27 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 23:29:15 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 25ms (Views: 24.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 23:29:15 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 23:29:15 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 23:29:15 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 23:29:15 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 23:29:15 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 23:29:15 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 23:29:15 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 23:29:15 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 23:29:15 -0200
+
+
+Started GET "/list-reports" for 127.0.0.1 at 2017-02-02 23:29:36 -0200
+Processing by SallesController#list_report as HTML
+  [1m[36mSalle Load (0.2ms)[0m  [1mSELECT "salles".* FROM "salles"[0m
+  Rendered salles/list_report.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 9ms (Views: 8.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/list-reports" for 127.0.0.1 at 2017-02-02 23:31:50 -0200
+Processing by SallesController#list_report as HTML
+  [1m[35mSalle Load (0.2ms)[0m  SELECT "salles".* FROM "salles"
+  Rendered salles/list_report.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 23:31:50 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 23:31:50 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 23:31:50 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 23:31:50 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 23:31:50 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 23:31:50 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 23:31:50 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 23:31:50 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 23:31:50 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 23:31:54 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/salles" for 127.0.0.1 at 2017-02-02 23:31:58 -0200
+Processing by SallesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"91g7KqzcBGRABjES/Cvp1m8iH1Abfl5J/+GgBquD1C0=", "salle"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x007fa5bc669180 @tempfile=#<Tempfile:/tmp/RackMultipart20170202-12288-7c6erg>, @original_filename="dados.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"salle[file]\"; filename=\"dados.txt\"\r\nContent-Type: text/plain\r\n">}, "commit"=>"Create Salle"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "total_price", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address", "987 Fake St"], ["created_at", Fri, 03 Feb 2017 01:31:58 UTC +00:00], ["description", "R$10 off R$20 of food"], ["provider", "Bob's Pizza\n"], ["purchaser", "João Silva"], ["quantity", 2], ["total_price", 20.0], ["unit_price", 10.0], ["updated_at", Fri, 03 Feb 2017 01:31:58 UTC +00:00]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "total_price", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "456 Unreal Rd"], ["created_at", Fri, 03 Feb 2017 01:31:58 UTC +00:00], ["description", "R$30 of awesome for R$10"], ["provider", "Tom's Awesome Shop\n"], ["purchaser", "Amy Pond"], ["quantity", 5], ["total_price", 50.0], ["unit_price", 10.0], ["updated_at", Fri, 03 Feb 2017 01:31:58 UTC +00:00]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "total_price", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address", "123 Fake St"], ["created_at", Fri, 03 Feb 2017 01:31:58 UTC +00:00], ["description", "R$20 Sneakers for R$5"], ["provider", "Sneaker Store Emporium\n"], ["purchaser", "Marty McFly"], ["quantity", 1], ["total_price", 5.0], ["unit_price", 5.0], ["updated_at", Fri, 03 Feb 2017 01:31:58 UTC +00:00]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "total_price", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "123 Fake St"], ["created_at", Fri, 03 Feb 2017 01:31:58 UTC +00:00], ["description", "R$20 Sneakers for R$5"], ["provider", "Sneaker Store Emporium\n"], ["purchaser", "Snake Plissken"], ["quantity", 4], ["total_price", 20.0], ["unit_price", 5.0], ["updated_at", Fri, 03 Feb 2017 01:31:58 UTC +00:00]]
+  [1m[35m (235.3ms)[0m  commit transaction
+  Rendered salles/list_report.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 255ms (Views: 13.3ms | ActiveRecord: 236.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 23:31:58 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 23:31:58 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 23:31:58 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 23:31:58 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 23:31:58 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 23:31:58 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 23:31:58 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 23:31:58 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 23:31:58 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 23:32:18 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/salles" for 127.0.0.1 at 2017-02-02 23:32:22 -0200
+Processing by SallesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"91g7KqzcBGRABjES/Cvp1m8iH1Abfl5J/+GgBquD1C0=", "salle"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x007fa5d0db93b8 @tempfile=#<Tempfile:/tmp/RackMultipart20170202-12288-1yt7kya>, @original_filename="dados.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"salle[file]\"; filename=\"dados.txt\"\r\nContent-Type: text/plain\r\n">}, "commit"=>"Create Salle"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "total_price", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address", "987 Fake St"], ["created_at", Fri, 03 Feb 2017 01:32:22 UTC +00:00], ["description", "R$10 off R$20 of food"], ["provider", "Bob's Pizza\n"], ["purchaser", "João Silva"], ["quantity", 2], ["total_price", 20.0], ["unit_price", 10.0], ["updated_at", Fri, 03 Feb 2017 01:32:22 UTC +00:00]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "total_price", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "456 Unreal Rd"], ["created_at", Fri, 03 Feb 2017 01:32:22 UTC +00:00], ["description", "R$30 of awesome for R$10"], ["provider", "Tom's Awesome Shop\n"], ["purchaser", "Amy Pond"], ["quantity", 5], ["total_price", 50.0], ["unit_price", 10.0], ["updated_at", Fri, 03 Feb 2017 01:32:22 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "total_price", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address", "123 Fake St"], ["created_at", Fri, 03 Feb 2017 01:32:22 UTC +00:00], ["description", "R$20 Sneakers for R$5"], ["provider", "Sneaker Store Emporium\n"], ["purchaser", "Marty McFly"], ["quantity", 1], ["total_price", 5.0], ["unit_price", 5.0], ["updated_at", Fri, 03 Feb 2017 01:32:22 UTC +00:00]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "total_price", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "123 Fake St"], ["created_at", Fri, 03 Feb 2017 01:32:22 UTC +00:00], ["description", "R$20 Sneakers for R$5"], ["provider", "Sneaker Store Emporium\n"], ["purchaser", "Snake Plissken"], ["quantity", 4], ["total_price", 20.0], ["unit_price", 5.0], ["updated_at", Fri, 03 Feb 2017 01:32:22 UTC +00:00]]
+  [1m[35m (86.9ms)[0m  commit transaction
+  Rendered salles/list_report.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 121ms (Views: 27.8ms | ActiveRecord: 87.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 23:32:22 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 23:32:22 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 23:32:22 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 23:32:22 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 23:32:22 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 23:32:22 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 23:32:22 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 23:32:22 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 23:32:22 -0200
+
+
+Started GET "/salles" for 127.0.0.1 at 2017-02-02 23:33:42 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 25ms (Views: 22.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 23:33:42 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 23:33:42 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 23:33:42 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 23:33:42 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 23:33:42 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 23:33:42 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 23:33:42 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 23:33:42 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 23:33:42 -0200
+
+
+Started POST "/salles" for 127.0.0.1 at 2017-02-02 23:33:47 -0200
+Processing by SallesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"91g7KqzcBGRABjES/Cvp1m8iH1Abfl5J/+GgBquD1C0=", "salle"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x00557c27f1d4e0 @tempfile=#<Tempfile:/tmp/RackMultipart20170202-12288-1bncjr3>, @original_filename="dados.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"salle[file]\"; filename=\"dados.txt\"\r\nContent-Type: text/plain\r\n">}, "commit"=>"Create Salle"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "total_price", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address", "987 Fake St"], ["created_at", Fri, 03 Feb 2017 01:33:47 UTC +00:00], ["description", "R$10 off R$20 of food"], ["provider", "Bob's Pizza\n"], ["purchaser", "João Silva"], ["quantity", 2], ["total_price", 20.0], ["unit_price", 10.0], ["updated_at", Fri, 03 Feb 2017 01:33:47 UTC +00:00]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "total_price", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "456 Unreal Rd"], ["created_at", Fri, 03 Feb 2017 01:33:47 UTC +00:00], ["description", "R$30 of awesome for R$10"], ["provider", "Tom's Awesome Shop\n"], ["purchaser", "Amy Pond"], ["quantity", 5], ["total_price", 50.0], ["unit_price", 10.0], ["updated_at", Fri, 03 Feb 2017 01:33:47 UTC +00:00]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "total_price", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address", "123 Fake St"], ["created_at", Fri, 03 Feb 2017 01:33:47 UTC +00:00], ["description", "R$20 Sneakers for R$5"], ["provider", "Sneaker Store Emporium\n"], ["purchaser", "Marty McFly"], ["quantity", 1], ["total_price", 5.0], ["unit_price", 5.0], ["updated_at", Fri, 03 Feb 2017 01:33:47 UTC +00:00]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "total_price", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "123 Fake St"], ["created_at", Fri, 03 Feb 2017 01:33:47 UTC +00:00], ["description", "R$20 Sneakers for R$5"], ["provider", "Sneaker Store Emporium\n"], ["purchaser", "Snake Plissken"], ["quantity", 4], ["total_price", 20.0], ["unit_price", 5.0], ["updated_at", Fri, 03 Feb 2017 01:33:47 UTC +00:00]]
+  [1m[35m (232.3ms)[0m  commit transaction
+  Rendered salles/list_report.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 278ms (Views: 36.4ms | ActiveRecord: 233.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 23:33:48 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 23:33:48 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 23:33:48 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 23:33:48 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 23:33:48 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 23:33:48 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 23:33:48 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 23:33:48 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 23:33:48 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 23:33:50 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/list-reports" for 127.0.0.1 at 2017-02-02 23:33:56 -0200
+Processing by SallesController#list_report as HTML
+  [1m[36mSalle Load (0.4ms)[0m  [1mSELECT "salles".* FROM "salles"[0m
+  Rendered salles/list_report.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 23:34:18 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/salles" for 127.0.0.1 at 2017-02-02 23:34:22 -0200
+Processing by SallesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"91g7KqzcBGRABjES/Cvp1m8iH1Abfl5J/+GgBquD1C0=", "salle"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x00557c27141560 @tempfile=#<Tempfile:/tmp/RackMultipart20170202-12288-9nu3oj>, @original_filename="dados.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"salle[file]\"; filename=\"dados.txt\"\r\nContent-Type: text/plain\r\n">}, "commit"=>"Create Salle"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "total_price", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "987 Fake St"], ["created_at", Fri, 03 Feb 2017 01:34:22 UTC +00:00], ["description", "R$10 off R$20 of food"], ["provider", "Bob's Pizza\n"], ["purchaser", "João Silva"], ["quantity", 2], ["total_price", 20.0], ["unit_price", 10.0], ["updated_at", Fri, 03 Feb 2017 01:34:22 UTC +00:00]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "total_price", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address", "456 Unreal Rd"], ["created_at", Fri, 03 Feb 2017 01:34:22 UTC +00:00], ["description", "R$30 of awesome for R$10"], ["provider", "Tom's Awesome Shop\n"], ["purchaser", "Amy Pond"], ["quantity", 5], ["total_price", 50.0], ["unit_price", 10.0], ["updated_at", Fri, 03 Feb 2017 01:34:22 UTC +00:00]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "total_price", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "123 Fake St"], ["created_at", Fri, 03 Feb 2017 01:34:22 UTC +00:00], ["description", "R$20 Sneakers for R$5"], ["provider", "Sneaker Store Emporium\n"], ["purchaser", "Marty McFly"], ["quantity", 1], ["total_price", 5.0], ["unit_price", 5.0], ["updated_at", Fri, 03 Feb 2017 01:34:22 UTC +00:00]]
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "salles" ("address", "created_at", "description", "purchaser", "quantity", "total_price", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["address", "Sneaker Store Emporium\n"], ["created_at", Fri, 03 Feb 2017 01:34:22 UTC +00:00], ["description", "5.0"], ["purchaser", "Snake Plissken Sneakers for R$5"], ["quantity", 123], ["total_price", 492.0], ["unit_price", 4.0], ["updated_at", Fri, 03 Feb 2017 01:34:22 UTC +00:00]]
+  [1m[36m (91.4ms)[0m  [1mcommit transaction[0m
+  Rendered salles/list_report.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 105ms (Views: 6.5ms | ActiveRecord: 92.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 23:34:22 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 23:34:22 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 23:34:22 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 23:34:22 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 23:34:22 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 23:34:22 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 23:34:22 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 23:34:22 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 23:34:22 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 23:34:51 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/salles" for 127.0.0.1 at 2017-02-02 23:34:57 -0200
+Processing by SallesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"91g7KqzcBGRABjES/Cvp1m8iH1Abfl5J/+GgBquD1C0=", "salle"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x007fa5bc1fa130 @tempfile=#<Tempfile:/tmp/RackMultipart20170202-12288-f7s35w>, @original_filename="dados.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"salle[file]\"; filename=\"dados.txt\"\r\nContent-Type: text/plain\r\n">}, "commit"=>"Create Salle"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "total_price", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "987 Fake St"], ["created_at", Fri, 03 Feb 2017 01:34:57 UTC +00:00], ["description", "R$10 off R$20 of food"], ["provider", "Bob's Pizza\n"], ["purchaser", "João Silva"], ["quantity", 2], ["total_price", 20.0], ["unit_price", 10.0], ["updated_at", Fri, 03 Feb 2017 01:34:57 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "total_price", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address", "456 Unreal Rd"], ["created_at", Fri, 03 Feb 2017 01:34:57 UTC +00:00], ["description", "R$30 of awesome for R$10"], ["provider", "Tom's Awesome Shop\n"], ["purchaser", "Amy Pond"], ["quantity", 5], ["total_price", 50.0], ["unit_price", 10.0], ["updated_at", Fri, 03 Feb 2017 01:34:57 UTC +00:00]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "total_price", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "123 Fake St"], ["created_at", Fri, 03 Feb 2017 01:34:57 UTC +00:00], ["description", "R$20 Sneakers for R$5"], ["provider", "Sneaker Store Emporium\n"], ["purchaser", "Marty McFly"], ["quantity", 1], ["total_price", 5.0], ["unit_price", 5.0], ["updated_at", Fri, 03 Feb 2017 01:34:57 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "salles" ("address", "created_at", "description", "purchaser", "quantity", "total_price", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?)  [["address", "Sneaker Store Emporium\n"], ["created_at", Fri, 03 Feb 2017 01:34:57 UTC +00:00], ["description", "R$20 Sneakers for R$5"], ["purchaser", "Snake Plissken"], ["quantity", 123], ["total_price", 492.0], ["unit_price", 4.0], ["updated_at", Fri, 03 Feb 2017 01:34:57 UTC +00:00]]
+  [1m[36m (114.9ms)[0m  [1mcommit transaction[0m
+  Rendered salles/list_report.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 148ms (Views: 27.2ms | ActiveRecord: 115.6ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 23:34:58 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 23:34:58 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 23:34:58 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 23:34:58 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 23:34:58 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 23:34:58 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 23:34:58 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 23:34:58 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 23:34:58 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 23:35:07 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/salles" for 127.0.0.1 at 2017-02-02 23:35:11 -0200
+Processing by SallesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"91g7KqzcBGRABjES/Cvp1m8iH1Abfl5J/+GgBquD1C0=", "salle"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x007fa5d0d55de0 @tempfile=#<Tempfile:/tmp/RackMultipart20170202-12288-1r9lyl1>, @original_filename="dados.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"salle[file]\"; filename=\"dados.txt\"\r\nContent-Type: text/plain\r\n">}, "commit"=>"Create Salle"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "total_price", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "987 Fake St"], ["created_at", Fri, 03 Feb 2017 01:35:11 UTC +00:00], ["description", "R$10 off R$20 of food"], ["provider", "Bob's Pizza\n"], ["purchaser", "João Silva"], ["quantity", 2], ["total_price", 20.0], ["unit_price", 10.0], ["updated_at", Fri, 03 Feb 2017 01:35:11 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "total_price", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address", "456 Unreal Rd"], ["created_at", Fri, 03 Feb 2017 01:35:11 UTC +00:00], ["description", "R$30 of awesome for R$10"], ["provider", "Tom's Awesome Shop\n"], ["purchaser", "Amy Pond"], ["quantity", 5], ["total_price", 50.0], ["unit_price", 10.0], ["updated_at", Fri, 03 Feb 2017 01:35:11 UTC +00:00]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "total_price", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "123 Fake St"], ["created_at", Fri, 03 Feb 2017 01:35:11 UTC +00:00], ["description", "R$20 Sneakers for R$5"], ["provider", "Sneaker Store Emporium\n"], ["purchaser", "Marty McFly"], ["quantity", 1], ["total_price", 5.0], ["unit_price", 5.0], ["updated_at", Fri, 03 Feb 2017 01:35:11 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  rollback transaction
+  Rendered salles/list_report.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 14ms (Views: 6.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 23:35:11 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 23:35:11 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 23:35:11 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 23:35:11 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 23:35:11 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 23:35:11 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 23:35:11 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 23:35:11 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 23:35:11 -0200
+
+
+Started GET "/list-reports" for 127.0.0.1 at 2017-02-02 23:35:50 -0200
+Processing by SallesController#list_report as HTML
+  [1m[36mSalle Load (0.3ms)[0m  [1mSELECT "salles".* FROM "salles"[0m
+  Rendered salles/list_report.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 11ms (Views: 10.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 23:36:20 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/salles" for 127.0.0.1 at 2017-02-02 23:36:24 -0200
+Processing by SallesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"91g7KqzcBGRABjES/Cvp1m8iH1Abfl5J/+GgBquD1C0=", "salle"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x007fa5bc66b250 @tempfile=#<Tempfile:/tmp/RackMultipart20170202-12288-b3ogwh>, @original_filename="dados.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"salle[file]\"; filename=\"dados.txt\"\r\nContent-Type: text/plain\r\n">}, "commit"=>"Create Salle"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "total_price", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "987 Fake St"], ["created_at", Fri, 03 Feb 2017 01:36:24 UTC +00:00], ["description", "R$10 off R$20 of food"], ["provider", "Bob's Pizza\n"], ["purchaser", "João Silva"], ["quantity", 2], ["total_price", 20.0], ["unit_price", 10.0], ["updated_at", Fri, 03 Feb 2017 01:36:24 UTC +00:00]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "total_price", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address", "456 Unreal Rd"], ["created_at", Fri, 03 Feb 2017 01:36:24 UTC +00:00], ["description", "R$30 of awesome for R$10"], ["provider", "Tom's Awesome Shop\n"], ["purchaser", "Amy Pond"], ["quantity", 5], ["total_price", 50.0], ["unit_price", 10.0], ["updated_at", Fri, 03 Feb 2017 01:36:24 UTC +00:00]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "total_price", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "123 Fake St"], ["created_at", Fri, 03 Feb 2017 01:36:24 UTC +00:00], ["description", "R$20 Sneakers for R$5"], ["provider", "Sneaker Store Emporium\n"], ["purchaser", "Marty McFly"], ["quantity", 1], ["total_price", 5.0], ["unit_price", 5.0], ["updated_at", Fri, 03 Feb 2017 01:36:24 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered salles/list_report.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 16ms (Views: 7.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 23:36:24 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 23:36:24 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 23:36:24 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 23:36:24 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 23:36:24 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 23:36:24 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 23:36:24 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 23:36:24 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 23:36:24 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 23:36:28 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/salles" for 127.0.0.1 at 2017-02-02 23:36:39 -0200
+Processing by SallesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"91g7KqzcBGRABjES/Cvp1m8iH1Abfl5J/+GgBquD1C0=", "salle"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x007fa5d0cd8cc8 @tempfile=#<Tempfile:/tmp/RackMultipart20170202-12288-ojmafx>, @original_filename="dados.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"salle[file]\"; filename=\"dados.txt\"\r\nContent-Type: text/plain\r\n">}, "commit"=>"Create Salle"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "total_price", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address", "987 Fake St"], ["created_at", Fri, 03 Feb 2017 01:36:39 UTC +00:00], ["description", "R$10 off R$20 of food"], ["provider", "Bob's Pizza\n"], ["purchaser", "João Silva"], ["quantity", 2], ["total_price", 20.0], ["unit_price", 10.0], ["updated_at", Fri, 03 Feb 2017 01:36:39 UTC +00:00]]
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "total_price", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "456 Unreal Rd"], ["created_at", Fri, 03 Feb 2017 01:36:39 UTC +00:00], ["description", "R$30 of awesome for R$10"], ["provider", "Tom's Awesome Shop\n"], ["purchaser", "Amy Pond"], ["quantity", 5], ["total_price", 50.0], ["unit_price", 10.0], ["updated_at", Fri, 03 Feb 2017 01:36:39 UTC +00:00]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "total_price", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address", "123 Fake St"], ["created_at", Fri, 03 Feb 2017 01:36:39 UTC +00:00], ["description", "R$20 Sneakers for R$5"], ["provider", "Sneaker Store Emporium\n"], ["purchaser", "Marty McFly"], ["quantity", 1], ["total_price", 5.0], ["unit_price", 5.0], ["updated_at", Fri, 03 Feb 2017 01:36:39 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  Rendered salles/list_report.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 17ms (Views: 7.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 23:36:39 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 23:36:39 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 23:36:39 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 23:36:39 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 23:36:39 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 23:36:39 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 23:36:39 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 23:36:39 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 23:36:39 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 23:36:52 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/salles" for 127.0.0.1 at 2017-02-02 23:36:56 -0200
+Processing by SallesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"91g7KqzcBGRABjES/Cvp1m8iH1Abfl5J/+GgBquD1C0=", "salle"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x007fa5d08d4ff0 @tempfile=#<Tempfile:/tmp/RackMultipart20170202-12288-d3rjd0>, @original_filename="dados.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"salle[file]\"; filename=\"dados.txt\"\r\nContent-Type: text/plain\r\n">}, "commit"=>"Create Salle"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "total_price", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "987 Fake St"], ["created_at", Fri, 03 Feb 2017 01:36:56 UTC +00:00], ["description", "R$10 off R$20 of food"], ["provider", "Bob's Pizza\n"], ["purchaser", "João Silva"], ["quantity", 2], ["total_price", 20.0], ["unit_price", 10.0], ["updated_at", Fri, 03 Feb 2017 01:36:56 UTC +00:00]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "total_price", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address", "456 Unreal Rd"], ["created_at", Fri, 03 Feb 2017 01:36:56 UTC +00:00], ["description", "R$30 of awesome for R$10"], ["provider", "Tom's Awesome Shop\n"], ["purchaser", "Amy Pond"], ["quantity", 5], ["total_price", 50.0], ["unit_price", 10.0], ["updated_at", Fri, 03 Feb 2017 01:36:56 UTC +00:00]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "total_price", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "123 Fake St"], ["created_at", Fri, 03 Feb 2017 01:36:56 UTC +00:00], ["description", "R$20 Sneakers for R$5"], ["provider", "Sneaker Store Emporium\n"], ["purchaser", "Marty McFly"], ["quantity", 1], ["total_price", 5.0], ["unit_price", 5.0], ["updated_at", Fri, 03 Feb 2017 01:36:56 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  rollback transaction
+  Rendered salles/list_report.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 14ms (Views: 7.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 23:36:56 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 23:36:56 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 23:36:56 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 23:36:56 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 23:36:56 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 23:36:56 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 23:36:56 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 23:36:56 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 23:36:56 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 23:38:09 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (22.4ms)
+Completed 200 OK in 33ms (Views: 29.0ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/salles" for 127.0.0.1 at 2017-02-02 23:38:13 -0200
+Processing by SallesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"91g7KqzcBGRABjES/Cvp1m8iH1Abfl5J/+GgBquD1C0=", "salle"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x00557c26fe59f0 @tempfile=#<Tempfile:/tmp/RackMultipart20170202-12288-w0rpm0>, @original_filename="dados.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"salle[file]\"; filename=\"dados.txt\"\r\nContent-Type: text/plain\r\n">}, "commit"=>"Create Salle"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "total_price", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address", "987 Fake St"], ["created_at", Fri, 03 Feb 2017 01:38:13 UTC +00:00], ["description", "R$10 off R$20 of food"], ["provider", "Bob's Pizza\n"], ["purchaser", "João Silva"], ["quantity", 2], ["total_price", 20.0], ["unit_price", 10.0], ["updated_at", Fri, 03 Feb 2017 01:38:13 UTC +00:00]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "total_price", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "456 Unreal Rd"], ["created_at", Fri, 03 Feb 2017 01:38:13 UTC +00:00], ["description", "R$30 of awesome for R$10"], ["provider", "Tom's Awesome Shop\n"], ["purchaser", "Amy Pond"], ["quantity", 5], ["total_price", 50.0], ["unit_price", 10.0], ["updated_at", Fri, 03 Feb 2017 01:38:13 UTC +00:00]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "total_price", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address", "123 Fake St"], ["created_at", Fri, 03 Feb 2017 01:38:13 UTC +00:00], ["description", "R$20 Sneakers for R$5"], ["provider", "Sneaker Store Emporium\n"], ["purchaser", "Marty McFly"], ["quantity", 1], ["total_price", 5.0], ["unit_price", 5.0], ["updated_at", Fri, 03 Feb 2017 01:38:13 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered salles/list_report.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 15ms (Views: 7.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 23:38:13 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 23:38:13 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 23:38:13 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 23:38:13 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 23:38:13 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 23:38:13 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 23:38:13 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 23:38:13 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 23:38:13 -0200
+
+
+Started GET "/salles" for 127.0.0.1 at 2017-02-02 23:38:45 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 10ms (Views: 9.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 23:38:45 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 23:38:45 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 23:38:45 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 23:38:45 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 23:38:45 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 23:38:45 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 23:38:45 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 23:38:45 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 23:38:45 -0200
+
+
+Started POST "/salles" for 127.0.0.1 at 2017-02-02 23:38:49 -0200
+Processing by SallesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"91g7KqzcBGRABjES/Cvp1m8iH1Abfl5J/+GgBquD1C0=", "salle"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x007fa5c0117390 @tempfile=#<Tempfile:/tmp/RackMultipart20170202-12288-1itpees>, @original_filename="dados.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"salle[file]\"; filename=\"dados.txt\"\r\nContent-Type: text/plain\r\n">}, "commit"=>"Create Salle"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "total_price", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "987 Fake St"], ["created_at", Fri, 03 Feb 2017 01:38:49 UTC +00:00], ["description", "R$10 off R$20 of food"], ["provider", "Bob's Pizza\n"], ["purchaser", "João Silva"], ["quantity", 2], ["total_price", 20.0], ["unit_price", 10.0], ["updated_at", Fri, 03 Feb 2017 01:38:49 UTC +00:00]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "total_price", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address", "456 Unreal Rd"], ["created_at", Fri, 03 Feb 2017 01:38:49 UTC +00:00], ["description", "R$30 of awesome for R$10"], ["provider", "Tom's Awesome Shop\n"], ["purchaser", "Amy Pond"], ["quantity", 5], ["total_price", 50.0], ["unit_price", 10.0], ["updated_at", Fri, 03 Feb 2017 01:38:49 UTC +00:00]]
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "total_price", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "123 Fake St"], ["created_at", Fri, 03 Feb 2017 01:38:49 UTC +00:00], ["description", "R$20 Sneakers for R$5"], ["provider", "Sneaker Store Emporium\n"], ["purchaser", "Marty McFly"], ["quantity", 1], ["total_price", 5.0], ["unit_price", 5.0], ["updated_at", Fri, 03 Feb 2017 01:38:49 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  rollback transaction
+  Rendered salles/list_report.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 14ms (Views: 7.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 23:38:49 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 23:38:49 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 23:38:49 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 23:38:49 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 23:38:49 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 23:38:49 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 23:38:49 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 23:38:49 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 23:38:49 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 23:40:13 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/salles" for 127.0.0.1 at 2017-02-02 23:40:17 -0200
+Processing by SallesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"91g7KqzcBGRABjES/Cvp1m8iH1Abfl5J/+GgBquD1C0=", "salle"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x007fa5d04ee490 @tempfile=#<Tempfile:/tmp/RackMultipart20170202-12288-vpaksw>, @original_filename="dados.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"salle[file]\"; filename=\"dados.txt\"\r\nContent-Type: text/plain\r\n">}, "commit"=>"Create Salle"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "total_price", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address", "987 Fake St"], ["created_at", Fri, 03 Feb 2017 01:40:17 UTC +00:00], ["description", "R$10 off R$20 of food"], ["provider", "Bob's Pizza\n"], ["purchaser", "João Silva"], ["quantity", 2], ["total_price", 20.0], ["unit_price", 10.0], ["updated_at", Fri, 03 Feb 2017 01:40:17 UTC +00:00]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "total_price", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "456 Unreal Rd"], ["created_at", Fri, 03 Feb 2017 01:40:17 UTC +00:00], ["description", "R$30 of awesome for R$10"], ["provider", "Tom's Awesome Shop\n"], ["purchaser", "Amy Pond"], ["quantity", 5], ["total_price", 50.0], ["unit_price", 10.0], ["updated_at", Fri, 03 Feb 2017 01:40:17 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "total_price", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address", "123 Fake St"], ["created_at", Fri, 03 Feb 2017 01:40:17 UTC +00:00], ["description", "R$20 Sneakers for R$5"], ["provider", "Sneaker Store Emporium\n"], ["purchaser", "Marty McFly"], ["quantity", 1], ["total_price", 5.0], ["unit_price", 5.0], ["updated_at", Fri, 03 Feb 2017 01:40:17 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  Rendered salles/list_report.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 16ms (Views: 8.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 23:40:17 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 23:40:17 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 23:40:17 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 23:40:17 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 23:40:17 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 23:40:17 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 23:40:17 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 23:40:17 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 23:40:17 -0200
+
+
+Started GET "/salles" for 127.0.0.1 at 2017-02-02 23:40:57 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 12ms (Views: 11.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 23:40:57 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 23:40:57 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 23:40:57 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 23:40:57 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 23:40:57 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 23:40:57 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 23:40:57 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 23:40:57 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 23:40:57 -0200
+
+
+Started POST "/salles" for 127.0.0.1 at 2017-02-02 23:41:01 -0200
+Processing by SallesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"91g7KqzcBGRABjES/Cvp1m8iH1Abfl5J/+GgBquD1C0=", "salle"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x007fa5d0c4f2e8 @tempfile=#<Tempfile:/tmp/RackMultipart20170202-12288-79jtk>, @original_filename="dados.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"salle[file]\"; filename=\"dados.txt\"\r\nContent-Type: text/plain\r\n">}, "commit"=>"Create Salle"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "total_price", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "987 Fake St"], ["created_at", Fri, 03 Feb 2017 01:41:01 UTC +00:00], ["description", "R$10 off R$20 of food"], ["provider", "Bob's Pizza\n"], ["purchaser", "João Silva"], ["quantity", 2], ["total_price", 20.0], ["unit_price", 10.0], ["updated_at", Fri, 03 Feb 2017 01:41:01 UTC +00:00]]
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "total_price", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address", "456 Unreal Rd"], ["created_at", Fri, 03 Feb 2017 01:41:01 UTC +00:00], ["description", "R$30 of awesome for R$10"], ["provider", "Tom's Awesome Shop\n"], ["purchaser", "Amy Pond"], ["quantity", 5], ["total_price", 50.0], ["unit_price", 10.0], ["updated_at", Fri, 03 Feb 2017 01:41:01 UTC +00:00]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "total_price", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "123 Fake St"], ["created_at", Fri, 03 Feb 2017 01:41:01 UTC +00:00], ["description", "R$20 Sneakers for R$5"], ["provider", "Sneaker Store Emporium\n"], ["purchaser", "Marty McFly"], ["quantity", 1], ["total_price", 5.0], ["unit_price", 5.0], ["updated_at", Fri, 03 Feb 2017 01:41:01 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  rollback transaction
+  Rendered salles/list_report.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 16ms (Views: 7.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 23:41:01 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 23:41:01 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 23:41:01 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 23:41:01 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 23:41:01 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 23:41:01 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 23:41:01 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 23:41:01 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 23:41:01 -0200
+
+
+Started GET "/" for 127.0.0.1 at 2017-02-02 23:42:30 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (17.9ms)
+Completed 200 OK in 27ms (Views: 23.8ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/salles" for 127.0.0.1 at 2017-02-02 23:42:33 -0200
+Processing by SallesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"91g7KqzcBGRABjES/Cvp1m8iH1Abfl5J/+GgBquD1C0=", "salle"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x00557c27c7c7e0 @tempfile=#<Tempfile:/tmp/RackMultipart20170202-12288-36qm54>, @original_filename="dados.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"salle[file]\"; filename=\"dados.txt\"\r\nContent-Type: text/plain\r\n">}, "commit"=>"Create Salle"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "total_price", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address", "987 Fake St"], ["created_at", Fri, 03 Feb 2017 01:42:33 UTC +00:00], ["description", "R$10 off R$20 of food"], ["provider", "Bob's Pizza\n"], ["purchaser", "João Silva"], ["quantity", 2], ["total_price", 20.0], ["unit_price", 10.0], ["updated_at", Fri, 03 Feb 2017 01:42:33 UTC +00:00]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "total_price", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "456 Unreal Rd"], ["created_at", Fri, 03 Feb 2017 01:42:33 UTC +00:00], ["description", "R$30 of awesome for R$10"], ["provider", "Tom's Awesome Shop\n"], ["purchaser", "Amy Pond"], ["quantity", 5], ["total_price", 50.0], ["unit_price", 10.0], ["updated_at", Fri, 03 Feb 2017 01:42:33 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "total_price", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address", "123 Fake St"], ["created_at", Fri, 03 Feb 2017 01:42:33 UTC +00:00], ["description", "R$20 Sneakers for R$5"], ["provider", "Sneaker Store Emporium\n"], ["purchaser", "Marty McFly"], ["quantity", 1], ["total_price", 5.0], ["unit_price", 5.0], ["updated_at", Fri, 03 Feb 2017 01:42:33 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  Rendered salles/list_report.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 16ms (Views: 7.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 23:42:33 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 23:42:33 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 23:42:33 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 23:42:33 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 23:42:33 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 23:42:33 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 23:42:33 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 23:42:33 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 23:42:33 -0200
+
+
+Started GET "/salles" for 127.0.0.1 at 2017-02-02 23:43:16 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 23:43:16 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 23:43:16 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 23:43:16 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 23:43:16 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 23:43:16 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 23:43:16 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 23:43:16 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 23:43:16 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 23:43:16 -0200
+
+
+Started POST "/salles" for 127.0.0.1 at 2017-02-02 23:43:20 -0200
+Processing by SallesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"91g7KqzcBGRABjES/Cvp1m8iH1Abfl5J/+GgBquD1C0=", "salle"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x007fa5d0ac7470 @tempfile=#<Tempfile:/tmp/RackMultipart20170202-12288-ftjzyv>, @original_filename="dados.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"salle[file]\"; filename=\"dados.txt\"\r\nContent-Type: text/plain\r\n">}, "commit"=>"Create Salle"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "total_price", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "987 Fake St"], ["created_at", Fri, 03 Feb 2017 01:43:20 UTC +00:00], ["description", "R$10 off R$20 of food"], ["provider", "Bob's Pizza\n"], ["purchaser", "João Silva"], ["quantity", 2], ["total_price", 20.0], ["unit_price", 10.0], ["updated_at", Fri, 03 Feb 2017 01:43:20 UTC +00:00]]
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "total_price", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address", "456 Unreal Rd"], ["created_at", Fri, 03 Feb 2017 01:43:20 UTC +00:00], ["description", "R$30 of awesome for R$10"], ["provider", "Tom's Awesome Shop\n"], ["purchaser", "Amy Pond"], ["quantity", 5], ["total_price", 50.0], ["unit_price", 10.0], ["updated_at", Fri, 03 Feb 2017 01:43:20 UTC +00:00]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "total_price", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "123 Fake St"], ["created_at", Fri, 03 Feb 2017 01:43:20 UTC +00:00], ["description", "R$20 Sneakers for R$5"], ["provider", "Sneaker Store Emporium\n"], ["purchaser", "Marty McFly"], ["quantity", 1], ["total_price", 5.0], ["unit_price", 5.0], ["updated_at", Fri, 03 Feb 2017 01:43:20 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  rollback transaction
+  Rendered salles/list_report.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 13ms (Views: 7.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 23:43:20 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 23:43:20 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 23:43:20 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 23:43:20 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 23:43:20 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 23:43:20 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 23:43:20 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 23:43:20 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 23:43:20 -0200
+
+
+Started GET "/salles" for 127.0.0.1 at 2017-02-02 23:47:24 -0200
+Processing by SallesController#index as HTML
+  Rendered salles/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 35ms (Views: 34.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 23:47:24 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 23:47:24 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 23:47:24 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 23:47:24 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 23:47:24 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 23:47:24 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 23:47:24 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 23:47:24 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 23:47:24 -0200
+
+
+Started POST "/salles" for 127.0.0.1 at 2017-02-02 23:47:29 -0200
+Processing by SallesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"91g7KqzcBGRABjES/Cvp1m8iH1Abfl5J/+GgBquD1C0=", "salle"=>{"file"=>#<ActionDispatch::Http::UploadedFile:0x007fa5c00bb770 @tempfile=#<Tempfile:/tmp/RackMultipart20170202-12288-jdjxkt>, @original_filename="dados.txt", @content_type="text/plain", @headers="Content-Disposition: form-data; name=\"salle[file]\"; filename=\"dados.txt\"\r\nContent-Type: text/plain\r\n">}, "commit"=>"Create Salle"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "total_price", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address", "987 Fake St"], ["created_at", Fri, 03 Feb 2017 01:47:29 UTC +00:00], ["description", "R$10 off R$20 of food"], ["provider", "Bob's Pizza\n"], ["purchaser", "João Silva"], ["quantity", 2], ["total_price", 20.0], ["unit_price", 10.0], ["updated_at", Fri, 03 Feb 2017 01:47:29 UTC +00:00]]
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "total_price", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "456 Unreal Rd"], ["created_at", Fri, 03 Feb 2017 01:47:29 UTC +00:00], ["description", "R$30 of awesome for R$10"], ["provider", "Tom's Awesome Shop\n"], ["purchaser", "Amy Pond"], ["quantity", 5], ["total_price", 50.0], ["unit_price", 10.0], ["updated_at", Fri, 03 Feb 2017 01:47:29 UTC +00:00]]
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "salles" ("address", "created_at", "description", "provider", "purchaser", "quantity", "total_price", "unit_price", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["address", "123 Fake St"], ["created_at", Fri, 03 Feb 2017 01:47:29 UTC +00:00], ["description", "R$20 Sneakers for R$5"], ["provider", "Sneaker Store Emporium\n"], ["purchaser", "Marty McFly"], ["quantity", 1], ["total_price", 5.0], ["unit_price", 5.0], ["updated_at", Fri, 03 Feb 2017 01:47:29 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  Rendered salles/list_report.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 16ms (Views: 7.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2017-02-02 23:47:29 -0200
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2017-02-02 23:47:29 -0200
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2017-02-02 23:47:29 -0200
+
+
+Started GET "/assets/salles.css?body=1" for 127.0.0.1 at 2017-02-02 23:47:29 -0200
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2017-02-02 23:47:29 -0200
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2017-02-02 23:47:29 -0200
+
+
+Started GET "/assets/style.css?body=1" for 127.0.0.1 at 2017-02-02 23:47:29 -0200
+
+
+Started GET "/assets/salles.js?body=1" for 127.0.0.1 at 2017-02-02 23:47:29 -0200
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2017-02-02 23:47:29 -0200
+
+
+Started GET "/list-reports" for 127.0.0.1 at 2017-02-02 23:48:17 -0200
+Processing by SallesController#list_report as HTML
+  [1m[35mSalle Load (0.2ms)[0m  SELECT "salles".* FROM "salles"
+  Rendered salles/list_report.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 11ms (Views: 9.9ms | ActiveRecord: 0.2ms)

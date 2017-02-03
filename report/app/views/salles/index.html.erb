@@ -2,7 +2,10 @@
 
   <%= form_for @salle, html: { multipart: true } do |f| %>
     <h2>Escolha o arquivo a ser processado.</h2>
-    <%= f.file_field :file %>
+
+    <div id="choose-file" class="block-center text-center center-block">
+      <%= f.file_field :file %>
+    </div>
 
     <div id="file-submit" class="actions">
       <%= f.submit %>

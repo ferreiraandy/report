@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170201183004) do
+ActiveRecord::Schema.define(version: 20170203005312) do
 
   create_table "salles", force: true do |t|
     t.string   "purchaser"
@@ -22,12 +22,7 @@ ActiveRecord::Schema.define(version: 20170201183004) do
     t.string   "provider"
     t.datetime "created_at"
     t.datetime "updated_at"
-  end
-
-  create_table "uploads", force: true do |t|
-    t.string   "file"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.float    "total_price"
   end
 
 end
