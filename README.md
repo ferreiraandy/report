@@ -1,28 +1,43 @@
-== README
+# Projeto: Report
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Pensando no usuário final, foi utilizado para este projeto um layout responsivo.
 
-Things you may want to cover:
+Com isso, em determinados tamanhos de tela, alguns campos foram ocultados na lista de registros.
 
-* Ruby version
+# Acessando o projeto.
 
-* System dependencies
+- Baixe ou faça um fork deste projeto em sua maquina local.
 
-* Configuration
+- Acesse a pasta do projeto (report/report).
 
-* Database creation
+- Dentro da pasta do projeto, rode o seguinte comando para baixar as dependencias:
 
-* Database initialization
+bundle install
 
-* How to run the test suite
+- Siga os passos abaixo para executar o projeto.
 
-* Services (job queues, cache servers, search engines, etc.)
+## Rodar projeto em uma maquina local (modo desenvolvimento)
 
-* Deployment instructions
+- Crie o banco de dados rodando o seguinte comando:
 
-* ...
+rake db:migrate
 
+- Após criar o banco de dados, inicie o servidor local do rails:
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+rails s
+
+- A aplicação estará disponível na seguinte URL:
+
+http://localhost:3000
+
+## Rodar testes unitários
+
+rake db:test:prepare
+
+rake test
+
+## Envie um feedback para:
+
+andyferreira92@gmail.com
+
+Obrigado.

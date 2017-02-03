@@ -9,55 +9,61 @@
   </div>
 <% end %>
 
-<div class="col-md-12">
-  <div class="col-md-2 col-sm-2 col-xs-2"><h4>Comprador</h4></div>
-  <div class="col-md-2 col-sm-2 hidden-xs"><h4>Descrição</h4></div>
-  <div class="col-md-2 col-sm-2 col-xs-2 text-center"><h4>Quantidade</h4></div>
-  <div class="col-md-2 col-sm-2 col-xs-2"><h4>Endereço</h4></div>
-  <div class="col-md-2 col-sm-2 col-xs-2"><h4>Fornecedor</h4></div>
-  <div class="col-md-1 col-sm-1 col-xs-1 text-center"><h4>Unidade</h4></div>
-  <div class="col-md-1 col-sm-1 col-xs-1 text-center"><h4>Total</h4></div>
+<div class="col-md-12 line line-top line-black">
+  <div class="col-md-2 col-sm-2 col-xs-3"><h5>Comprador</h5></div>
+  <div class="col-md-2 hidden-sm hidden-xs"><h5>Descrição</h5></div>
+  <div class="col-md-1 col-sm-2 col-xs-2 text-center"><h5>Quantidade</h5></div>
+  <div class="col-md-2 col-sm-2 col-xs-5"><h5>Endereço</h5></div>
+  <div class="col-md-2 col-sm-2 hidden-xs"><h5>Fornecedor</h5></div>
+  <div class="col-md-2 col-sm-2 hidden-xs text-center"><h5>Valor (Unid.)</h5></div>
+  <div class="col-md-1 col-sm-1 col-xs-2 text-center"><h5>Total</h5></div>
 </div>
 
-<% @salles.each do |salle| %>
-  <div class="col-md-12">
-    <div class="col-md-2 col-sm-2 col-xs-2 ">
-      <%= salle.purchaser %>
-    </div>
+<% if @salles %>
+  <% @salles.each_with_index do |salle, index| %>
+    <div class="col-md-12 line <%= (index.even?)? "" : "line-gray" %>">
+      <div class="col-md-2 col-sm-2 col-xs-3">
+        <%= salle.purchaser %>
+      </div>
 
-    <div class="col-md-2 col-sm-2 hidden-xs ">
-      <%= salle.description %>
-    </div>
+      <div class="col-md-2 hidden-sm hidden-xs">
+        <%= salle.description %>
+      </div>
 
-    <div class="col-md-2 col-sm-2 col-xs-2 text-center">
-      <%= salle.quantity %>
-    </div>
+      <div class="col-md-1 col-sm-2 col-xs-2 text-center">
+        <%= salle.quantity %>
+      </div>
 
-    <div class="col-md-2 col-sm-2 col-xs-2 ">
-      <%= salle.address %>
-    </div>
+      <div class="col-md-2 col-sm-2 col-xs-5">
+        <%= salle.address %>
+      </div>
 
-    <div class="col-md-2 col-sm-2 col-xs-2 ">
-      <%= salle.provider %>
-    </div>
+      <div class="col-md-2 col-sm-2 hidden-xs">
+        <%= salle.provider %>
+      </div>
 
-    <div class="col-md-1 col-sm-1 col-xs-1 text-center">
-      <%= salle.unit_price %>
-    </div>
+      <div class="col-md-2 col-sm-2 hidden-xs text-center">
+      
+        <%= ('%.2f' % (salle.unit_price)).gsub(".", ",") %>
+      </div>
 
-    <div class="col-md-1 col-sm-1 col-xs-1 text-center">
-      <%= salle.total_price %>
+      <div class="col-md-1 col-sm-1 col-xs-2 text-center">
+        <% if salle.total_price %>
+          <%= ('%.2f' % (salle.total_price)).gsub(".", ",") %>
+        <% end %>
+      </div>
+    </div>
+  <% end %>
+
+  <div class="col-md-12 line line-black line-bottom text-center">
+    <div class="col-md-6 col-sm-6 col-xs-6">
+      <h5>Valor Total</h5>
+    </div>
+    
+    <div class="col-md-6 col-sm-6 col-xs-6">
+      <h5>
+        <%= ('%.2f' % (@salles.inject(0) { |sum, value| sum.to_f + value[:total_price].to_f })).gsub(".", ",") %>
+      </h5>
     </div>
   </div>
 <% end %>
-
-<div class="col-md-12 text-right">
-  <div class="col-md-6">
-    <h4>Valor Total</h4>
-  </div>
-  <div class="col-md-6">
-    <h4>
-      <%= @salles.inject(0) {|sum, value| sum.to_f + value[:total_price].to_f} %>
-    </h4>
-  </div>
-</div>

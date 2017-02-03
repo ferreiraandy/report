@@ -5,7 +5,13 @@
   color: #FFF;
   font-weight: 700;
   float: left;
-  padding: 16px 10px;
+  padding: 16px 20px;
+  margin: 0px;
+}
+.navbar-nav a:hover,
+.navbar-nav a:active{
+  background: #555;
+  text-decoration: none;
 }
 #choose-file{
   width: 100%;
@@ -26,6 +32,27 @@
 #file-submit input:hover,
 #file-submit input:active{
   background: #098D3B;
+}
+.line{
+  padding: 4px 0px;
+  width: 100%;
+  float: left;
+  height: auto;
+}
+.line-black{
+  background: #444;
+  color: #FFF;
+  font-weight: 700;
+}
+.line-gray{
+  background: #CCC;
+}
+.line-top{
+  margin: 50px auto 10px;
+
+}
+.line-bottom{
+  margin: 20px auto 50px;
 }
 #error{
   padding: 20px;
