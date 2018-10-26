@@ -12,7 +12,9 @@ Com isso, em determinados tamanhos de tela, alguns campos foram ocultados na lis
 
 - Dentro da pasta do projeto, rode o seguinte comando para baixar as dependencias:
 
-bundle install
+``` terminal
+$ bundle install
+```
 
 - Siga os passos abaixo para executar o projeto.
 
@@ -20,11 +22,15 @@ bundle install
 
 - Crie o banco de dados rodando o seguinte comando:
 
-rake db:migrate
+``` terminal
+$ rake db:migrate
+```
 
 - Após criar o banco de dados, inicie o servidor local do rails:
 
-rails s
+``` terminal
+$ rails s
+```
 
 - A aplicação estará disponível na seguinte URL:
 
@@ -32,9 +38,13 @@ http://localhost:3000
 
 ## Rodar testes unitários
 
-rake db:test:prepare
+``` terminal
+$ rake db:test:prepare
+```
 
-rake test
+``` terminal
+$ rake test
+```
 
 ## Envie um feedback para:
 
